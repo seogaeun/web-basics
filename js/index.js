@@ -1,3 +1,3 @@
 const popAlert = () => {
-    alert('만나서 반가워요.')
+    alert('와 작동한다!!!.')
 }
