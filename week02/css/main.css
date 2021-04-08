@@ -1,0 +1,18 @@
+body{
+    padding: 64px;
+    white-space: nowrap;
+}
+main{
+    padding: 16px 0;
+}
+
+h1{
+    font-size: 50px;
+    color: blueviolet;
+    margin: 30px;
+    white-space: nowrap;
+}
+
+sup{
+    font-size: large;
+}

@@ -1,0 +1,53 @@
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    font: size 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #b2ebeb;
+}
+
+.material-icons{
+    color: #F6F5F0;
+    font-size: 32px;
+    cursor: pointer;
+
+}
+
+/**헤더 기본 레이아웃 잡기**/
+/**헤더 기본  아이콘 넣기**/
+/**x와 햄버거 번갈아 보이게 하기**/
+/* HEADER */
+
+header {
+    background: #000;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+header>.material-icons#btn--open {
+    display: block;
+}
+
+header>.material-icons#btn--close {
+    display: none;
+}
+
+/* SIDE NAV */
+
+nav {
+    position: absolute;
+    top: 60px;
+    height: calc(100vh - 60px);
+    width: 300px;
+    background: #000;
+    transform: translateX(-120%);
+    transition: .4s;
+}
