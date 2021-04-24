@@ -730,6 +730,9 @@ footer{
     font-size: 13px;
     text-align: center;
     padding-left: 30px;
+    padding-right: 5px;
+    border-right: 1px solid #6d6d6d;
+    
 }
 
 /*푸터 sns리스트*/
@@ -801,7 +804,7 @@ footer{
 .address2{
     float: left;
     padding-left: 20px;
-    padding-right: 200px;
+    padding-right: 250px;
     
 }
 /*푸터 세번째에 있는 관련 사이트*/
