@@ -388,6 +388,7 @@ section .mainpicture{
 .mainview__title{
     color: rgb(255, 255, 255);
     font-size: 60px;
+    font-weight: 10px;
 }
 
 /*메인화면 소제목*/
