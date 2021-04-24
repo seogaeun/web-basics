@@ -286,19 +286,39 @@ nav {
     right: 0;
     top: 100px;
     width: 80px;
-    height: 400px;
-    background: #cfa;
+    height: 420px;
+    background: rgb(0, 0, 0);
     z-index: 2;
 }
 
 /*퀵메뉴sns*/
 #quick>table{
-    background-color: violet;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+/*퀵메뉴 리스트*/
+.quickmenu{
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.quick{
+    margin-top: 15px;
+    height: 20px;
 }
 
 
+/*퀵메뉴top*/
+.top{
+    color:white;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
 
 /*섹션1*/
 .section1{
@@ -473,8 +493,8 @@ section .airplane{
 /*항공편 검색 설명 글*/
 .airplane>li{
     position: absolute;
-    left: 30%;
-    top:1185px;
+    left: 32%;
+    top:1165px;
     align-items: center;
     display: flex;
     color: #f6f5f0b6;
