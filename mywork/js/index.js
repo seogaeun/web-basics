@@ -1,4 +1,5 @@
 
+
 // 사이드 네비게이션 선택자
 const sideMenuEl = document.getElementById('side__menu')
 
@@ -44,3 +45,4 @@ sideMenuEl.addEventListener("mouseout",function(){
     // 사이드 메뉴를 원상태로 숨깁니다
      sideMenuEl.style.transform = 'translateY(-150%)'
 })
+

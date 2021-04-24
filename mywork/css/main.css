@@ -10,7 +10,6 @@ body{
     font: size 16px;
     font-weight: 400;
     line-height: 1.4;
-    background: #b2ebeb;
     height: 3000px;
 }
 
@@ -22,6 +21,10 @@ body{
 
 }
 
+/**인트로 비디오**/
+video{
+    width: 100%;
+}
 
 /* 헤더 */
 header {
@@ -277,8 +280,25 @@ nav {
     color: cornsilk;
 }
 
+/*퀵메뉴*/
+#quick{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 80px;
+    height: 400px;
+    background: #cfa;
+    z-index: 2;
+}
 
-/*인트로 동영상(섹션0)*/
+/*퀵메뉴sns*/
+#quick>table{
+    background-color: violet;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
 
 /*섹션1*/
 .section1{
@@ -302,7 +322,7 @@ section .mainpicture{
     color: black;
     position: absolute;
     left: 10%;
-    top:220px;
+    top:820px;
     align-items: center;
     display: flex;
 
@@ -320,7 +340,7 @@ section .mainpicture{
     color: black;
     position: absolute;
     right: 10%;
-    top:220px;
+    top:820px;
     align-items: center;
     display: flex;
 
@@ -454,7 +474,7 @@ section .airplane{
 .airplane>li{
     position: absolute;
     left: 30%;
-    top:530px;
+    top:1185px;
     align-items: center;
     display: flex;
     color: #f6f5f0b6;
@@ -709,6 +729,115 @@ section#totalguideview .terminal .terminal__box {
     padding-left:10px;
     padding-top:5px ;
 }
+
+/*기타 베너*/
+.etcbanner{
+    width: 100%;
+    height: 200px;
+}
+
+
+section .mainbanner{
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+
+/*화면 넘기기-왼쪽*/
+.before{
+    float: left;
+    color: black;
+    position: absolute;
+    margin-top: 60px;
+    left: 15%;
+    align-items: center;
+    display: flex;
+
+    padding:  10px;
+    width: 70px;
+    height:70px;
+
+}
+
+/*화면 넘기기-오른쪽*/
+.next{
+    float: left;
+    color: black;
+    position: absolute;
+    margin-top: 60px;
+    right: 15%;
+    align-items: center;
+    display: flex;
+
+    padding:  10px;
+    width: 70px;
+    height:70px;
+
+}
+
+/*배너 이미지들*/
+.bannerimg1{
+    float: left;
+    position: absolute;
+    margin-top: 50px;
+    left: 25%;
+    align-items: center;
+    display: flex;
+    padding:  10px;
+    width: 200px;
+}
+
+.bannerimg2{
+    float: left;
+    position: absolute;
+    margin-top: 50px;
+    left: 40%;
+    align-items: center;
+    display: flex;
+    padding:  10px;
+    width: 200px;
+}
+
+.bannerimg3{
+    float: left;
+    position: absolute;
+    margin-top: 50px;
+    left: 55%;
+    align-items: center;
+    display: flex;
+    padding:  10px;
+    width: 200px;
+}
+
+/*기타배너 아이콘 파트*/
+section .etcplay{
+    width: 100%;
+    height: 30%;
+    float: right;
+}
+
+/*재생&일시정지 파트*/
+.bannerplay{
+    margin-top:10px;
+    margin-left: 80%;
+}
+
+.stop-to-play__icons{
+    color:black;
+    font-size: 15px;
+    background-color: gray;
+    margin-left: 5px;
+    opacity: 50%;
+}
+
+/*이착륙 아이콘들*/
+.material-icons{
+    float: left;
+}
+
+
+
+
 
 /*푸터*/
 footer{
