@@ -15,7 +15,6 @@ if(window.scrollY>=200){
     //헤더요소의 높이를 원래대로
     // 아이콘을 보이지 않게 처리하고,사이드 메뉴 숨기기
     headerMenuEl.style.height = '80px'
-    sideMenuEl.style.transform = 'translateY(-150%)'
     menuOpenEl.style.display = 'none'
     menuCloseEl.style.display = 'none'
 }

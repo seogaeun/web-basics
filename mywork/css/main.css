@@ -1,8 +1,10 @@
+/**기본 설정**/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/**기본 설정**/
 body{
     font-family: 'Nanum Myeongjo', serif;
     font: size 16px;
@@ -12,20 +14,17 @@ body{
     height: 3000px;
 }
 
+/**구글 아이콘들 기본 설정**/
 .material-icons{
-    color: #F6F5F0;
+    color: #ffffff;
     font-size: 32px;
     cursor: pointer;
 
 }
 
-/**헤더 기본 레이아웃 잡기**/
-/**헤더 기본  아이콘 넣기**/
-/**x와 햄버거 번갈아 보이게 하기**/
-/* HEADER */
 
+/* 헤더 */
 header {
-    background: rgb(0, 255, 85);
     height: 80px;
     width: 100%;
     display: flex;
@@ -37,8 +36,8 @@ header {
 }
 /*헤더 윗 부분*/
 header .header--up {
-    font-size: 15px;
-    background-color: blue;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
     float: left;
     width: 100%;
 }
@@ -48,18 +47,25 @@ header .other__site {
     cursor: pointer;
     float: left;
     top: 10px;
-    left: 2%;
-    background-color: violet;
+    left:10px;
     text-align: center;
 }
-/*인천국제공항 & 인천국제공항공사 개별*/
-.other__site.other__site a{
-    background-color: red;
-    padding: 10px;
+/*인천국제공항 버튼*/
+.area-tab-sitebtn1{
+    border: 1px solid #183af7;
+    padding: 5px;
+    text-decoration: none;
+
+}
+/*인천국제공항공사 버튼*/
+.area-tab-sitebtn2{
+    border: 1px solid #696969;
+    padding: 5px;
     text-decoration: none;
 
 }
 
+/*로고*/
 .header--up .logo {
     position: absolute;
     float: left;
@@ -67,6 +73,7 @@ header .other__site {
     left: 33%;
     margin: auto 0;
 }
+/*로고 이미지*/
 .logo img{
     width: 350px;
 }
@@ -78,9 +85,10 @@ header .other__site {
     cursor: pointer;
     float: left;
     top: 10px;
-    right:100px;
+    right:120px;
     font-size: 10px;
     color: black;
+    
 }
 /*사이트맵~로그인 개별*/
 .sideUp__list ul li{
@@ -104,43 +112,48 @@ header .other__site {
 header .header--down {
     justify-content: bottom;
     position: absolute;
+    text-align: center;
     width: 100%;
-    height: 50px;
+    height: 45px;
     float: left;
     display: flex;
     bottom: 0;
-    background-color: cornflowerblue;
+    border-bottom: 1px solid #1522d6;
+    background-color: rgb(255, 255, 255);
 }
 
 /*메뉴*/
 .headerdown__menu{
-    padding-top: 10px;
-    padding-left:10%;
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 100%;
+    
+}
+
+.menu__departure{
+    margin-left: 150px;
 }
 
 .headerdown__menu>li{
     float: left;
-    padding-left: 50px;
+    align-items: center;
+    display: flex;
+    padding-left: 76px;
+    color:rgb(0, 0, 0);
+    text-align: center;
 }
 
 /*공항지도&검색*/
 .map-n-search{
-    justify-content: bottom;
-    position: absolute;
-    float: left;
-    bottom: 0;
-    right: 10px;
     display: flex;
-    height: 100%;
-    background-color: crimson;
+    padding-left: 2%;
     font-size: 12px;
 }
 
 /*공항지도&검색 개별*/
 .map-n-search>label{
     padding: 10px;
-    background-color: deeppink;
-    border-radius: 15px;
+    display: flex;
 }
 
 
@@ -152,12 +165,11 @@ header .header--down {
 
 /*공항지도&검색 이미지*/
 .map-n-search>label>span{
+    background-color: white;
+    border-radius: 100px;
+    color: black;
     height: 100%;
 }
-
-
-
-
 
 .search{
     float: left;
@@ -167,14 +179,7 @@ map-n-search.material-icons {
     float: left;
 }
 
-header>.material-icons#btn--open {
-    display: block;
-}
-
-header>.material-icons#btn--close {
-    display: none;
-}
-/**mainnav**/
+/**네비게이션 메뉴**/
 nav {
     position: fixed;
     top: 50px;
@@ -189,35 +194,59 @@ nav {
 
 /*사이드 메뉴*/
 #side__menu{
-
     color: black;
     overflow:hidden;
     display: center;
     justify-content: center;
-    
 }
 #departure{
-    float: left; width: 10%; padding: 3%; font-size: 13px;
+    float: left; width:11%; height: 100%; margin-left: 10px; padding-top: 3%; font-size: 13px;
+    margin-left: 195px;
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
+
 }
 
 #arrival{
-    float: left; width: 10%; padding: 3%; font-size: 13px;
+    float: left; width: 9%; height: 100%;  padding-top: 3%; font-size: 13px;
+
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
 }
 
 #exchange{
-    float: left; width: 10%; padding: 3%; font-size: 13px;
+    float: left; width: 11%; height: 100%; padding-top: 3%; font-size: 13px;
+    list-style: none;
+
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
+
 }
 
 #traffic{
-    float: left; width: 10%;  padding: 3%; font-size: 13px;
+    float: left; width: 10%;  height: 100%; padding-top: 3%; font-size: 13px;
+    list-style: none;
+
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
 }
 
 #shopping{
-    float: left; width: 10%;  padding: 3%; font-size: 13px;
+    float: left; width: 13%;  height: 100%; padding-top: 3%; font-size: 13px;
+    list-style: none;
+
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
 }
 
 #guide__information{
-    float: left; width: 10%; padding: 3%; font-size: 13px;
+    float: left; width: 12%; height: 100%; padding-top: 3%; font-size: 13px;
+    list-style: none;
+
+    text-align: center;
+    border-right: 1px solid #6d6d6d;
 }
 
 
@@ -246,23 +275,63 @@ section .mainpicture{
     float: left;
 }
 
+/*화면 넘기기-왼쪽*/
+.west{
+    float: left;
+    color: black;
+    position: absolute;
+    left: 10%;
+    top:220px;
+    align-items: center;
+    display: flex;
+
+    padding:  20px;
+    width: 70px;
+    height:70px;
+    border-radius: 100px;
+    background-color: white;
+    opacity:70%;
+}
+
+/*화면 넘기기-오른쪽*/
+.east{
+    float: left;
+    color: black;
+    position: absolute;
+    right: 10%;
+    top:220px;
+    align-items: center;
+    display: flex;
+
+    padding:  20px;
+    width: 70px;
+    height:70px;
+    border-radius: 100px;
+    background-color: white;
+    opacity:70%;
+}
+
+/*메인화면 제목&소제목*/
 #mainview__text{
     text-align: center;
     padding-top: 150px;
     list-style: none;
 }
 
+/*메인화면 제목*/
 .mainview__title{
     color: rgb(255, 255, 255);
     font-size: 60px;
 }
 
+/*메인화면 소제목*/
 .mainview__subtitle{
     color: rgb(255, 255, 255);
     padding-top: 20px;
     font-size: 25px;
 }
 
+/*항공편 검색 파트*/
 section .airplane{
     width: 100%;
     height: 30%;
@@ -271,41 +340,54 @@ section .airplane{
     float: right;
 }
 
+/*출발&도착 파트*/
 .airplane__clickbox{
     padding-top: 40px;
     padding-left: 30%;
 }
 
+/*출발 버튼*/
 .area-tab-btn1{
     color: rgb(255, 255, 255);
     font-size: 20px;
-    width: 21%;
-    height: 40px;
-    background-color: rgb(255, 30, 0);
+    width: 20%;
+    height: 300%;
     float: left;
     text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    padding-left: 10px;
 }
 
+/*도착 버튼*/
 .area-tab-btn2{
     color: rgb(255, 255, 255);
     font-size: 20px;
-    width: 21%;
-    height: 40px;
-    background-color: rgb(255, 230, 0);
+    width: 22%;
+    height: 300%;
     float: left;
     text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
 }
 
+/*항공편 검색&검색창&버튼&날씨이미지&온도 묶음*/
 .airplane__search{
-    padding-left: 17.3%;
+    padding-left: 19.3%;
     padding-top: 80px;
 }
 
+/*날씨 아이콘*/
 .airplane__search>img{
+    margin-left: 20px;
     padding-left: 10px;
     width: 4%;
+    border-left: 1px solid #b3b3b3;
+    float: left;
 }
 
+
+/*항공편 검색 글자*/
 #search__index{
     float: left;
     list-style: none;
@@ -314,10 +396,12 @@ section .airplane{
     color: rgb(255, 255, 255);
 }
 
+/*이착륙 아이콘들*/
 .material-icons{
     float: left;
 }
 
+/*온도 글자*/
 #weather{
     float: left;
     list-style: none;
@@ -326,30 +410,38 @@ section .airplane{
     color: rgb(255, 255, 255);
 }
 
-.weather--img{
-    float: left;
-}
 
+/*검색창*/
 #goto__input{
-    width: 41.5%;
+    width: 41%;
     height: 40px;
     float: left;
+    background-color: rgb(28, 28, 145) ;
+    color: white;
+    border-style: none;
+    border-bottom: 2px solid #ffffff;
 }
 
-
+/*검색  버튼*/
 #goto__btn{
     height: 40px;
     width: 40px;
     float: left;
 }
 
+/*항공편 검색 설명 글*/
 .airplane>li{
-    padding-left: 30%;
+    position: absolute;
+    left: 30%;
+    top:530px;
+    align-items: center;
+    display: flex;
     color: #f6f5f0b6;
     list-style: none;
+    font-size: 15px;
 }
 
-/*섹션2*/
+/*섹션2 공항이용가이드*/
 .section2{
     width: 100%;
     height: 580px;
@@ -358,7 +450,7 @@ section .airplane{
     background-repeat: no-repeat;
 }
 
-
+/*공항이용가이드 제목*/
 section .wrapper .maintitle{
     width: 100%;
     height: 80px;
@@ -367,15 +459,7 @@ section .wrapper .maintitle{
     list-style:none;
 }
 
-.titlekor{
-    font-size: 30px;
-}
-
-.titleeng{
-    font-size: 15px;
-    color: rgb(43, 59, 209);
-}
-
+/*공항이용가이드 제목*/
 #guide__maintext{
     float: left;
     text-align: center;
@@ -383,8 +467,21 @@ section .wrapper .maintitle{
     padding-left: 40%;
 }
 
+/*공항이용가이드 한국어*/
+.titlekor{
+    font-size: 30px;
+}
+
+/*공항이용가이드 영어*/
+.titleeng{
+    font-size: 15px;
+    color: rgb(43, 59, 209);
+}
+
+
+/*큰 박스 123*/
 section .wrapper .box{
-    width: (100%);
+    width: 100%;
     height: 450px;
     display: flex;
     padding-top: 50px;
@@ -394,22 +491,24 @@ section .wrapper .box{
 
 
 
-/*섹션2 박스 모양 창*/
 
+/*박스 모양 창 안 제목들*/
 #guidetext{
     list-style:none;
 }
 
+/*박스 모양 창 안 제목들*/
 .guidetitle{
     font-size: 20px;
 }
 
+/*박스 모양 창 안 부제목들*/
 .guidesub{
     font-size: 5px;
 
 }
 
-
+/*박스 모양 창 안*/
 section .wrapper .guidebox{
     width: 30%;
     height: 500px;
@@ -419,7 +518,7 @@ section .wrapper .guidebox{
     float: left;
 }
 
-/*섹션2 박스 모양 창 윗부분*/
+/*박스 모양 창 윗부분*/
 section .wrapper .guidebox .box--up {
     color: #F6F5F0;
     display: flex;
@@ -432,18 +531,30 @@ section .wrapper .guidebox .box--up {
     box-sizing: border-box;
 }
 
+/*1번 박스 모양 창 윗부분*/
 .section2__box1{
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_01.jpg");
     background-repeat: no-repeat;
     background-size: 93.5%  200px;
 }
 
+/*1번 박스 리스트들*/
+.checklist{
+    float: right;
+    width: 70%;
+    font-size: 10px;
+    text-align: start;
+    margin-top:10px;
+}
+
+/*2번 박스 모양 창 윗부분*/
 .section2__box2{
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_02.jpg");
     background-repeat: no-repeat;
     background-size: 93.5%  200px;
 }
 
+/*3번 박스 모양 창 윗부분*/
 .section2__box3{
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_03.jpg");
     background-repeat: no-repeat;
@@ -453,43 +564,40 @@ section .wrapper .guidebox .box--up {
 
 
 
-/*섹션2 박스 모양 창 아랫부분*/
+/*박스 모양 창 아랫부분*/
 section .wrapper .guidebox .box--down {
-    background: #F6F5F0;
+    background: #ffffff;
     height: 230px;
     width: 100%;
     float: left;
     box-sizing: border-box;
 }
-.guidelist{
-    overflow: hidden;
-}
 
+/*아랫부분 안에 리스트 제목들*/
 .list__title{
     float: left;
     width: 30%;
     margin-top:10px;
-    font-size: 10px;
+    font-size: 11px;
+
+    
 }
 
-.checklist{
-    float: right;
-    width: 70%;
-    font-size: 5px;
-    text-align: start;
-    margin-top:10px;
-}
 
-/*박스 안 내용*/
-/*여행 전 확인 할 것*/
+
+/*박스 안 내용(리스트 제목과 리스트들)*/
 .guidelist{
+    margin-top: 10px;
+    padding-left: 10px;
     width: 100%;
-    background-color: hotpink;
+    overflow: hidden;
+    list-style: "· ";
 }
 
-/*섹션3*/
+/*섹션3 공항이용가이드*/
+/*섹션3 배경&전체 틀*/
 .section3{
-    width: (100%-30px);
+    width: 100%;
     height: 580px;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_02.jpg");
     background-repeat: no-repeat;
@@ -497,12 +605,14 @@ section .wrapper .guidebox .box--down {
     padding-left: 30px;
 }
 
+/*큰상자 크기 간격*/
 section#totalguideview .terminal {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
 
+/*큰상자 기타 세부사항*/
 .totalguide_title{
     text-align: center;
     width:100%;
@@ -512,18 +622,14 @@ section#totalguideview .terminal {
     color: white;
 }
 
-section#totalguideview .terminal .terminal__box {
-    width: 420px;
-    height: 380px;
-    font-size: 32px;
-    color: #F6F5F0;
-}
 
+/*제 1 여객터미널 상자*/
 .terminal1__box{
     background: white;
     border-right: 1px solid #000000;
 }
 
+/*제 1 여객터미널 제목 상자*/
 .terminal1__title{
     width: 380px;
     height: 150px;
@@ -537,10 +643,11 @@ section#totalguideview .terminal .terminal__box {
     color: black;
 }
 
+/*제 2 여객터미널 상자*/
 .terminal2__box{
     background: white;
 }
-
+/*제 2 여객터미널 제목 상자*/
 .terminal2__title{
     width: 380px;
     height: 150px;
@@ -553,15 +660,142 @@ section#totalguideview .terminal .terminal__box {
     font-size: 25px;
     color: black;
 }
-
+/*내용 부분*/
 .terminal__select{
-    background-color: indigo;
-    padding: 10%;
+    padding: 0% 5% 10% 10%;
     width: 100%;
     height: 50%;
     font-size: 20px;
 }
 
+/*내용 글자*/
+section#totalguideview .terminal .terminal__box {
+    width: 420px;
+    height: 380px;
+    color: #000000;
+}
+
+/*제 1여객터미널 부분 아이콘*/
 .selecticon--img1{
     width:20%;
+    float: left;
+    padding-top:5px ;
+}
+
+/*아이콘들 간격조정*/
+.select--text{
+    float: left;
+    padding-left:10px;
+    padding-top:5px ;
+}
+
+/*푸터*/
+footer{
+    background: rgb(255, 255, 255);
+    height: 200px;
+    width: 100%;
+}
+
+/*푸터 젤 상단*/
+.footer--up{
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+/*푸터 메뉴리스트*/
+.fu--item{
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+/*푸터 sns리스트*/
+.sns__list{
+    float: left;
+    padding-left: 90px;
+
+}
+
+/*푸터 두번째*/
+.footer--mid1{
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+/*푸터 인천공항 연락처와 인증마크*/
+.fum1--item{
+    float: left;
+    text-align: center;
+    width: 100%;
+    
+}
+
+/*푸터 인천공항 연락처 개별부분*/
+.fum1__center{
+    float: left;
+    font-size: 18px;
+}
+
+.fum1__centernumber{
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+/*푸터 인증마크 개별부분*/
+.fum1__mark{
+    float: left;
+    padding-left: 52%;
+}
+
+.fum1__mark>img{
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+}
+
+/*푸터 세번째*/
+.footer--mid2{
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+/*푸터 세번째에 있는 주소들 전체*/
+.fum2__list{
+    font-size: 11px;
+}
+
+/*푸터 세번째에 있는 주소들 일부들*/
+.address1{
+    float: left;
+    
+}
+
+.address2{
+    float: left;
+    padding-left: 20px;
+    padding-right: 200px;
+    
+}
+/*푸터 세번째에 있는 관련 사이트*/
+.site--list{
+    height: 30px;
+}
+
+/*푸터 네번째에 공사 주소와 저작권 표시*/
+.fum3--address{
+    list-style: none;
+    padding-left: 50px;
+    font-size: 11px;
+}
+
+.fum3--right{
+    padding-left: 50px;
+    font-size: 11px;
 }
