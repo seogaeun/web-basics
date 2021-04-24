@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Nanum Myeongjo', serif;
     font: size 16px;
@@ -20,27 +25,146 @@ body{
 /* HEADER */
 
 header {
-    background: #000;
-    height: 500px;
+    background: rgb(0, 255, 85);
+    height: 80px;
     width: 100%;
     display: flex;
     position: fixed;
-    align-items: center;
-    padding: 0 30px;
+    float: left;
     transition: .4s;
     /***우선 순서 정하기*/
-    z-index: 1;
+    z-index: 2;
 }
-h1{
-    color: cornsilk;
-    display: center;
-    position: relative;
-    left: 40%;
-    font-size: 20px;
+/*헤더 윗 부분*/
+header .header--up {
+    font-size: 15px;
+    background-color: blue;
+    float: left;
+    width: 100%;
+}
+/*인천국제공항 & 인천국제공항공사 묶음*/
+header .other__site {
+    position:fixed;
+    cursor: pointer;
+    float: left;
+    top: 10px;
+    left: 2%;
+    background-color: violet;
+    text-align: center;
+}
+/*인천국제공항 & 인천국제공항공사 개별*/
+.other__site.other__site a{
+    background-color: red;
+    padding: 10px;
+    text-decoration: none;
+
 }
 
-header>.material-icons {
+.header--up .logo {
     position: absolute;
+    float: left;
+    top:5px;
+    left: 33%;
+    margin: auto 0;
+}
+.logo img{
+    width: 350px;
+}
+
+
+/*사이트맵~로그인 묶음*/
+.sideUp__list {
+    position:fixed;
+    cursor: pointer;
+    float: left;
+    top: 10px;
+    right:100px;
+    font-size: 10px;
+    color: black;
+}
+/*사이트맵~로그인 개별*/
+.sideUp__list ul li{
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left:5px;
+}
+
+/*언어 부분*/
+.lang{
+    float: right;
+    position:fixed;
+    cursor: pointer;
+    float: left;
+    top: 10px;
+    right: 10px; 
+}
+
+/*헤더 아랫 부분*/
+header .header--down {
+    justify-content: bottom;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    float: left;
+    display: flex;
+    bottom: 0;
+    background-color: cornflowerblue;
+}
+
+/*메뉴*/
+.headerdown__menu{
+    padding-top: 10px;
+    padding-left:10%;
+}
+
+.headerdown__menu>li{
+    float: left;
+    padding-left: 50px;
+}
+
+/*공항지도&검색*/
+.map-n-search{
+    justify-content: bottom;
+    position: absolute;
+    float: left;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    height: 100%;
+    background-color: crimson;
+    font-size: 12px;
+}
+
+/*공항지도&검색 개별*/
+.map-n-search>label{
+    padding: 10px;
+    background-color: deeppink;
+    border-radius: 15px;
+}
+
+
+/*공항지도&검색 개별 글씨*/
+.map-n-search>label>a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*공항지도&검색 이미지*/
+.map-n-search>label>span{
+    height: 100%;
+}
+
+
+
+
+
+.search{
+    float: left;
+}
+
+map-n-search.material-icons {
+    float: left;
 }
 
 header>.material-icons#btn--open {
@@ -50,7 +174,7 @@ header>.material-icons#btn--open {
 header>.material-icons#btn--close {
     display: none;
 }
-
+/**mainnav**/
 nav {
     position: fixed;
     top: 50px;
@@ -59,4 +183,385 @@ nav {
     background: rgb(255, 255, 255);
     transform: translateY(-100%);
     transition: .4s;
+    z-index: 1;
+}
+
+
+/*사이드 메뉴*/
+#side__menu{
+
+    color: black;
+    overflow:hidden;
+    display: center;
+    justify-content: center;
+    
+}
+#departure{
+    float: left; width: 10%; padding: 3%; font-size: 13px;
+}
+
+#arrival{
+    float: left; width: 10%; padding: 3%; font-size: 13px;
+}
+
+#exchange{
+    float: left; width: 10%; padding: 3%; font-size: 13px;
+}
+
+#traffic{
+    float: left; width: 10%;  padding: 3%; font-size: 13px;
+}
+
+#shopping{
+    float: left; width: 10%;  padding: 3%; font-size: 13px;
+}
+
+#guide__information{
+    float: left; width: 10%; padding: 3%; font-size: 13px;
+}
+
+
+
+
+#main--header{
+    color: cornsilk;
+}
+
+
+/*인트로 동영상(섹션0)*/
+
+/*섹션1*/
+.section1{
+    width: 100%;
+    height: 580px;
+    background-image: url("https://www.airport.kr/fileroot/banner/20200819135818607_0.jpg");
+    background-size: 100%  580px;
+    background-repeat: no-repeat;
+}
+
+
+section .mainpicture{
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+
+#mainview__text{
+    text-align: center;
+    padding-top: 150px;
+    list-style: none;
+}
+
+.mainview__title{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.mainview__subtitle{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+section .airplane{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(28, 28, 145);
+    opacity: 80%;
+    float: right;
+}
+
+.airplane__clickbox{
+    padding-top: 40px;
+    padding-left: 30%;
+}
+
+.area-tab-btn1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 21%;
+    height: 40px;
+    background-color: rgb(255, 30, 0);
+    float: left;
+    text-align: center;
+}
+
+.area-tab-btn2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 21%;
+    height: 40px;
+    background-color: rgb(255, 230, 0);
+    float: left;
+    text-align: center;
+}
+
+.airplane__search{
+    padding-left: 17.3%;
+    padding-top: 80px;
+}
+
+.airplane__search>img{
+    padding-left: 10px;
+    width: 4%;
+}
+
+#search__index{
+    float: left;
+    list-style: none;
+    padding:10px 30px 0 30px ;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.material-icons{
+    float: left;
+}
+
+#weather{
+    float: left;
+    list-style: none;
+    font-size: 15px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.weather--img{
+    float: left;
+}
+
+#goto__input{
+    width: 41.5%;
+    height: 40px;
+    float: left;
+}
+
+
+#goto__btn{
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.airplane>li{
+    padding-left: 30%;
+    color: #f6f5f0b6;
+    list-style: none;
+}
+
+/*섹션2*/
+.section2{
+    width: 100%;
+    height: 580px;
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_01.jpg");
+    background-size: 100%  600px;
+    background-repeat: no-repeat;
+}
+
+
+section .wrapper .maintitle{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-top: 50px;
+    list-style:none;
+}
+
+.titlekor{
+    font-size: 30px;
+}
+
+.titleeng{
+    font-size: 15px;
+    color: rgb(43, 59, 209);
+}
+
+#guide__maintext{
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 40%;
+}
+
+section .wrapper .box{
+    width: (100%);
+    height: 450px;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 150px;
+
+}
+
+
+
+/*섹션2 박스 모양 창*/
+
+#guidetext{
+    list-style:none;
+}
+
+.guidetitle{
+    font-size: 20px;
+}
+
+.guidesub{
+    font-size: 5px;
+
+}
+
+
+section .wrapper .guidebox{
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    font-family: nanumsq, sans-serif;
+    padding:20px 20px 10px 0;
+    float: left;
+}
+
+/*섹션2 박스 모양 창 윗부분*/
+section .wrapper .guidebox .box--up {
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 100%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.section2__box1{
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 93.5%  200px;
+}
+
+.section2__box2{
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_02.jpg");
+    background-repeat: no-repeat;
+    background-size: 93.5%  200px;
+}
+
+.section2__box3{
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_block_item_03.jpg");
+    background-repeat: no-repeat;
+    background-size: 93.5%  200px;
+}
+
+
+
+
+/*섹션2 박스 모양 창 아랫부분*/
+section .wrapper .guidebox .box--down {
+    background: #F6F5F0;
+    height: 230px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.guidelist{
+    overflow: hidden;
+}
+
+.list__title{
+    float: left;
+    width: 30%;
+    margin-top:10px;
+    font-size: 10px;
+}
+
+.checklist{
+    float: right;
+    width: 70%;
+    font-size: 5px;
+    text-align: start;
+    margin-top:10px;
+}
+
+/*박스 안 내용*/
+/*여행 전 확인 할 것*/
+.guidelist{
+    width: 100%;
+    background-color: hotpink;
+}
+
+/*섹션3*/
+.section3{
+    width: (100%-30px);
+    height: 580px;
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_02.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%  600px;
+    padding-left: 30px;
+}
+
+section#totalguideview .terminal {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.totalguide_title{
+    text-align: center;
+    width:100%;
+    height: 80px;
+    font-size: 30px;
+    padding-top: 40px;
+    color: white;
+}
+
+section#totalguideview .terminal .terminal__box {
+    width: 420px;
+    height: 380px;
+    font-size: 32px;
+    color: #F6F5F0;
+}
+
+.terminal1__box{
+    background: white;
+    border-right: 1px solid #000000;
+}
+
+.terminal1__title{
+    width: 380px;
+    height: 150px;
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_guide_item_t1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+    margin: 20px;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.terminal2__box{
+    background: white;
+}
+
+.terminal2__title{
+    width: 380px;
+    height: 150px;
+    background-image: url("https://www.airport.kr/static/ap/images/bg_main_guide_item_t2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+    margin: 20px;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.terminal__select{
+    background-color: indigo;
+    padding: 10%;
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+}
+
+.selecticon--img1{
+    width:20%;
 }
