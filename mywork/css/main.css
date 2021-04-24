@@ -99,6 +99,7 @@ header .other__site {
     box-sizing: border-box;
     cursor: pointer;
     padding-left:5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*언어 부분*/
@@ -144,6 +145,7 @@ header .header--down {
     padding-left: 76px;
     color:rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -179,6 +181,7 @@ header .header--down {
     color: white;
     padding: 2px;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .search{
@@ -201,6 +204,7 @@ header .header--down {
     color: white;
     padding: 2px;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /**네비게이션 메뉴**/
@@ -302,6 +306,7 @@ nav {
     color:white;
     font-size: 12px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .quick{
@@ -411,6 +416,7 @@ section .airplane{
 .area-tab-btn1{
     color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     width: 20%;
     height: 300%;
     float: left;
@@ -423,6 +429,7 @@ section .airplane{
 /*도착 버튼*/
 .area-tab-btn2{
     color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: 22%;
     height: 300%;
@@ -436,6 +443,7 @@ section .airplane{
 .airplane__search{
     padding-left: 19.3%;
     padding-top: 80px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*날씨 아이콘*/
@@ -500,6 +508,7 @@ section .airplane{
     color: #f6f5f0b6;
     list-style: none;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*섹션2 공항이용가이드*/
@@ -748,6 +757,7 @@ section#totalguideview .terminal .terminal__box {
     float: left;
     padding-left:10px;
     padding-top:5px ;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*기타 베너*/
