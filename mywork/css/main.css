@@ -126,7 +126,7 @@ header .header--down {
 .headerdown__menu{
     padding-top: 15px;
     padding-left: 20px;
-    width: 100%;
+    width: 85%;
     
 }
 
@@ -143,40 +143,57 @@ header .header--down {
     text-align: center;
 }
 
+
 /*공항지도&검색*/
-.map-n-search{
-    display: flex;
-    padding-left: 2%;
-    font-size: 12px;
-}
-
-/*공항지도&검색 개별*/
-.map-n-search>label{
-    padding: 10px;
-    display: flex;
-}
-
-
-/*공항지도&검색 개별 글씨*/
-.map-n-search>label>a{
-    color: #000;
-    text-decoration: none;
-}
-
-/*공항지도&검색 이미지*/
-.map-n-search>label>span{
+.side_icons{
     background-color: white;
-    border-radius: 100px;
     color: black;
-    height: 100%;
+    width: auto;
+    border-radius: 80px;
+    font-size: 20px;
+    float: left;
+}
+    
+}
+
+.map-n-search{
+    padding: 5px;
+    float: left;
+    border-radius: 80px;
+}
+
+.map{
+    padding: 5px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: rgba(50, 163, 163, 0.897);
+    border-radius: 80px;
+    
+}
+
+.airport__map{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 15px;
 }
 
 .search{
+
+    padding: 5px;
     float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: rgb(29, 113, 170);
+    border-radius: 80px;
 }
 
-map-n-search.material-icons {
-    float: left;
+.airport__search{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 15px;
 }
 
 /**네비게이션 메뉴**/
