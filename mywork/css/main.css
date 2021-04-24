@@ -154,10 +154,10 @@ header .header--down {
     float: left;
 }
     
-
 .map-n-search{
     padding: 5px;
     float: left;
+    
     border-radius: 80px;
 }
 
@@ -166,7 +166,7 @@ header .header--down {
     float: left;
     margin-top: 5px;
     margin-left: 10px;
-    background-color: rgba(50, 163, 163, 0.897);
+    background-color: rgb(50, 163, 163);
     border-radius: 80px;
     
 }
@@ -179,10 +179,15 @@ header .header--down {
 }
 
 .search{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    align-items: center;
+    display: flex;
 
     padding: 5px;
     float: left;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 10px;
     background-color: rgb(29, 113, 170);
     border-radius: 80px;
