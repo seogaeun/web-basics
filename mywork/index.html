@@ -72,7 +72,7 @@
                         <div class="menu__departure">출발</div>
                     </li>
                     <li class="item">
-                        <div class="menu__arrival">프로그램</div>
+                        <div class="menu__arrival">도착</div>
                     </li>
                     <li class="item">
                         <div class="menu__exchange">환승</div>
@@ -89,25 +89,27 @@
                 </ul>
 
                 
-                <ul class="map-n-search">
-                    <!--공항지도-->
-                    <div class="map">
-                        <div class="side_icons material-icons">
-                             place
-                            </div>
-                        <a href="#" class="airport__map">
-                            공항지도
-                        </a>
-                    </div>
+
     
                         <!--검색-->
-                    <div class="search">
-                        <span class="side_icons material-icons">
-                             search
+                    <div class="map-n-search">
+                        <div class="map">
+                            <div class="side_icons material-icons">
+                                place
+                               </div>
+                           <a href="#" class="airport__map">
+                               공항지도
+                           </a>    
+                        </div>
+                       <div class="search">
+                             <span class="side_icons material-icons">
+                                search
                             </span>
-                        <a href="#" class="airport__search">
-                            검색
-                        </a>
+                            <a href="#" class="airport__search">
+                                검색
+                            </a>
+                       </div>
+                        
                     </div>
                 </ul>
 
@@ -221,36 +223,37 @@
                            </div>
                         <li class="mainview__subtitle">예술, 그 가치를 뛰어넘다</li>
                     </div>
+                    <div class="airplane">
+                        <div class="airplane airplane__clickbox">
+                            <label for="search__departure">
+                                <span class="updown-icons material-icons">
+                                    flight_takeoff
+                                    </span>
+                                <a href="#" class="area-tab-btn1">출발</a>
+                            </label>
+    
+                            <label for="search__arrival">
+                                <span class="updown-icons material-icons">
+                                    flight_land
+                                    </span>
+                                <a href="#" class="area-tab-btn2">
+                                    도착
+                                </a>
+                            </label>      
+                            </div>
+                            <div class="airplane__search">
+                                <li id=search__index>항공편 검색</li>
+                                <input type="text" id="goto__input" name="text" value="항공편/목적지를 입력하세요.">
+                                <span class="material-icons">
+                                    search
+                                </span>
+                                <img class="weather--img" src="https://www.airport.kr/static/ap/images/icon15.png" alt="날씨">
+                                <li id="weather">20/20 ℃</li>
+                            </div>
+                            <br><br><br><li>※전체 운항시간표는 검색버튼을 클릭하면 보실 수 있습니다.</li>
+                        </div>
                 </div>
-                <div class="airplane">
-                    <div class="airplane airplane__clickbox">
-                        <label for="search__departure">
-                            <span class="updown-icons material-icons">
-                                flight_takeoff
-                                </span>
-                            <a href="#" class="area-tab-btn1">출발</a>
-                        </label>
 
-                        <label for="search__arrival">
-                            <span class="updown-icons material-icons">
-                                flight_land
-                                </span>
-                            <a href="#" class="area-tab-btn2">
-                                도착
-                            </a>
-                        </label>      
-                        </div>
-                        <div class="airplane__search">
-                            <li id=search__index>항공편 검색</li>
-                            <input type="text" id="goto__input" name="text" value="항공편/목적지를 입력하세요.">
-                            <span class="material-icons">
-                                search
-                            </span>
-                            <img class="weather--img" src="https://www.airport.kr/static/ap/images/icon15.png" alt="날씨">
-                            <li id="weather">20/20 ℃</li>
-                        </div>
-                        <br><br><br><li>※전체 운항시간표는 검색버튼을 클릭하면 보실 수 있습니다.</li>
-                    </div>
                 
 
         </section>

@@ -10,7 +10,7 @@ body{
     font: size 16px;
     font-weight: 400;
     line-height: 1.4;
-    height: 3000px;
+    height: 4000px;
 }
 
 /**구글 아이콘들 기본 설정**/
@@ -28,7 +28,7 @@ video{
 
 /* 헤더 */
 header {
-    height: 80px;
+
     width: 100%;
     display: flex;
     position: fixed;
@@ -43,14 +43,15 @@ header .header--up {
     background-color: rgb(255, 255, 255);
     float: left;
     width: 100%;
+    height: 80px;
 }
 /*인천국제공항 & 인천국제공항공사 묶음*/
 header .other__site {
     position:fixed;
     cursor: pointer;
     float: left;
-    top: 10px;
-    left:10px;
+    top: 1.5%;
+    left:1%;
     text-align: center;
 }
 /*인천국제공항 버튼*/
@@ -72,13 +73,13 @@ header .other__site {
 .header--up .logo {
     position: absolute;
     float: left;
-    top:5px;
-    left: 33%;
+    top:15%;
+    left: 35%;
     margin: auto 0;
 }
 /*로고 이미지*/
 .logo img{
-    width: 350px;
+    width: 450px;
 }
 
 
@@ -87,8 +88,8 @@ header .other__site {
     position:fixed;
     cursor: pointer;
     float: left;
-    top: 10px;
-    right:120px;
+    top: 2%;
+    right:8%;
     font-size: 10px;
     color: black;
     
@@ -118,18 +119,18 @@ header .header--down {
     position: absolute;
     text-align: center;
     width: 100%;
-    height: 45px;
+    height: 40px;
+    top:60px;
     float: left;
     display: flex;
-    bottom: 0;
     border-bottom: 1px solid #1522d6;
     background-color: rgb(255, 255, 255);
 }
 
 /*메뉴*/
 .headerdown__menu{
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 4%;
     width: 85%;
     
 }
@@ -142,7 +143,7 @@ header .header--down {
     float: left;
     align-items: center;
     display: flex;
-    padding-left: 76px;
+    padding-left: 9%;
     color:rgb(0, 0, 0);
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -159,12 +160,6 @@ header .header--down {
     float: left;
 }
     
-.map-n-search{
-    padding: 5px;
-    float: left;
-    
-    border-radius: 80px;
-}
 
 .map{
     padding: 5px;
@@ -172,6 +167,16 @@ header .header--down {
     margin-top: 5px;
     margin-left: 10px;
     background-color: rgb(50, 163, 163);
+    border-radius: 80px;
+    
+}
+
+.search{
+    padding: 7px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 3px;
+    background-color: rgb(29, 113, 170);
     border-radius: 80px;
     
 }
@@ -184,10 +189,10 @@ header .header--down {
     font-family: 'Roboto', sans-serif;
 }
 
-.search{
+.map-n-search{
     position: absolute;
     right: 10px;
-    top:5px;
+    bottom:1%;
     align-items: center;
     display: flex;
 
@@ -195,7 +200,6 @@ header .header--down {
     float: left;
     margin-top: 3px;
     margin-left: 10px;
-    background-color: rgb(29, 113, 170);
     border-radius: 80px;
 }
 
@@ -210,7 +214,7 @@ header .header--down {
 /**네비게이션 메뉴**/
 nav {
     position: fixed;
-    top: 50px;
+    top: 60px;
     height: calc(60vh - 60px);
     width: 100%;
     background: rgb(255, 255, 255);
@@ -286,19 +290,22 @@ nav {
 
 /*퀵메뉴*/
 #quick{
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 100px;
+    bottom: 50px;
     width: 80px;
-    height: 420px;
+    height: 500px;
     background: rgb(0, 0, 0);
-    z-index: 2;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 /*퀵메뉴sns*/
 #quick>table{
     margin-left: 15px;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 /*퀵메뉴 리스트*/
@@ -307,6 +314,7 @@ nav {
     font-size: 12px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
 }
 
 .quick{
@@ -315,12 +323,16 @@ nav {
 }
 
 
+
+
 /*퀵메뉴top*/
 .top{
-    color:white;
-    margin-top: 30px;
+    color:rgb(255, 255, 255);
+    margin-bottom: 0px;
     margin-left: 30px;
-    font-size: 12px;
+    padding-left: 0%;
+    padding-right: 10%;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
 }
@@ -328,17 +340,18 @@ nav {
 /*섹션1*/
 .section1{
     width: 100%;
-    height: 580px;
+    height: 900px;
     background-image: url("https://www.airport.kr/fileroot/banner/20200819135818607_0.jpg");
-    background-size: 100%  580px;
+    background-size: 100%  100%;
     background-repeat: no-repeat;
 }
 
 
-section .mainpicture{
+.mainpicture{
     width: 100%;
-    height: 70%;
-    float: left;
+    height:150%;
+    position: relative;
+
 }
 
 /*화면 넘기기-왼쪽*/
@@ -347,7 +360,7 @@ section .mainpicture{
     color: black;
     position: absolute;
     left: 10%;
-    top:820px;
+    margin-top: 0;
     align-items: center;
     display: flex;
 
@@ -365,7 +378,6 @@ section .mainpicture{
     color: black;
     position: absolute;
     right: 10%;
-    top:820px;
     align-items: center;
     display: flex;
 
@@ -380,7 +392,7 @@ section .mainpicture{
 /*메인화면 제목&소제목*/
 #mainview__text{
     text-align: center;
-    padding-top: 150px;
+    padding-top: 30%;
     list-style: none;
 }
 
@@ -399,9 +411,10 @@ section .mainpicture{
 }
 
 /*항공편 검색 파트*/
-section .airplane{
+.airplane{
     width: 100%;
-    height: 30%;
+    height: 15%;
+    margin-top: 7%;
     background-color: rgb(28, 28, 145);
     opacity: 80%;
     float: right;
@@ -409,7 +422,7 @@ section .airplane{
 
 /*출발&도착 파트*/
 .airplane__clickbox{
-    padding-top: 40px;
+    margin-top: 3%;
     padding-left: 30%;
 }
 
@@ -419,7 +432,7 @@ section .airplane{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     width: 20%;
-    height: 300%;
+    height: 100%;
     float: left;
     text-align: center;
     text-decoration: none;
@@ -432,8 +445,8 @@ section .airplane{
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    width: 22%;
-    height: 300%;
+    width: 20%;
+    height: 100%;
     float: left;
     text-align: center;
     text-decoration: none;
@@ -443,7 +456,7 @@ section .airplane{
 /*항공편 검색&검색창&버튼&날씨이미지&온도 묶음*/
 .airplane__search{
     padding-left: 19.3%;
-    padding-top: 80px;
+    margin-top: 6%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -461,7 +474,7 @@ section .airplane{
 #search__index{
     float: left;
     list-style: none;
-    padding:10px 30px 0 30px ;
+    padding:10px 30px 0 0px ;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
@@ -503,7 +516,6 @@ section .airplane{
 .airplane>li{
     position: absolute;
     left: 32%;
-    top:1165px;
     align-items: center;
     display: flex;
     color: #f6f5f0b6;
@@ -515,9 +527,9 @@ section .airplane{
 /*섹션2 공항이용가이드*/
 .section2{
     width: 100%;
-    height: 580px;
+    height: 800px;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_01.jpg");
-    background-size: 100%  600px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -534,13 +546,13 @@ section .wrapper .maintitle{
 #guide__maintext{
     float: left;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 3%;
     padding-left: 40%;
 }
 
 /*공항이용가이드 한국어*/
 .titlekor{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /*공항이용가이드 영어*/
@@ -553,7 +565,7 @@ section .wrapper .maintitle{
 /*큰 박스 123*/
 section .wrapper .box{
     width: 100%;
-    height: 450px;
+    height: 80%;
     display: flex;
     padding-top: 50px;
     padding-left: 150px;
@@ -582,10 +594,10 @@ section .wrapper .box{
 /*박스 모양 창 안*/
 section .wrapper .guidebox{
     width: 30%;
-    height: 500px;
     text-align: center;
+    margin-top:5%;
     font-family: nanumsq, sans-serif;
-    padding:20px 20px 10px 0;
+    padding: 0px 25px 10px 0;
     float: left;
 }
 
@@ -596,7 +608,7 @@ section .wrapper .guidebox .box--up {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    height: 170px;
+    height: 200px;
     width: 100%;
     float: right;
     box-sizing: border-box;
@@ -613,9 +625,9 @@ section .wrapper .guidebox .box--up {
 .checklist{
     float: right;
     width: 70%;
-    font-size: 10px;
+    font-size: 13px;
     text-align: start;
-    margin-top:10px;
+    margin-top:35px;
 }
 
 /*2번 박스 모양 창 윗부분*/
@@ -638,7 +650,7 @@ section .wrapper .guidebox .box--up {
 /*박스 모양 창 아랫부분*/
 section .wrapper .guidebox .box--down {
     background: #ffffff;
-    height: 230px;
+    height: 350px;
     width: 100%;
     float: left;
     box-sizing: border-box;
@@ -649,7 +661,7 @@ section .wrapper .guidebox .box--down {
     float: left;
     width: 30%;
     margin-top:10px;
-    font-size: 11px;
+    font-size: 15px;
 
     
 }
@@ -669,10 +681,10 @@ section .wrapper .guidebox .box--down {
 /*섹션3 배경&전체 틀*/
 .section3{
     width: 100%;
-    height: 580px;
+    height: 800px;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_02.jpg");
     background-repeat: no-repeat;
-    background-size: 100%  600px;
+    background-size: 100%  800px;
     padding-left: 30px;
 }
 
@@ -680,14 +692,14 @@ section .wrapper .guidebox .box--down {
 section#totalguideview .terminal {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 /*큰상자 기타 세부사항*/
 .totalguide_title{
     text-align: center;
     width:100%;
-    height: 80px;
+    height: 50px;
     font-size: 30px;
     padding-top: 40px;
     color: white;
@@ -702,13 +714,13 @@ section#totalguideview .terminal {
 
 /*제 1 여객터미널 제목 상자*/
 .terminal1__title{
-    width: 380px;
-    height: 150px;
+    width: 430px;
+    height: 160px;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_guide_item_t1.jpg");
     background-repeat: no-repeat;
     background-size: 100%  100%;
     margin: 20px;
-    padding-top: 60px;
+    padding-top: 70px;
     text-align: center;
     font-size: 25px;
     color: black;
@@ -720,29 +732,29 @@ section#totalguideview .terminal {
 }
 /*제 2 여객터미널 제목 상자*/
 .terminal2__title{
-    width: 380px;
-    height: 150px;
+    width: 430px;
+    height: 160px;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_guide_item_t2.jpg");
     background-repeat: no-repeat;
     background-size: 100%  100%;
     margin: 20px;
-    padding-top: 60px;
+    padding-top: 70px;
     text-align: center;
     font-size: 25px;
     color: black;
 }
 /*내용 부분*/
 .terminal__select{
-    padding: 0% 5% 10% 10%;
+    padding: 5% 5% 10% 10%;
     width: 100%;
-    height: 50%;
+    height: 100%;
     font-size: 20px;
 }
 
 /*내용 글자*/
 section#totalguideview .terminal .terminal__box {
-    width: 420px;
-    height: 380px;
+    width: 480px;
+    height: 450px;
     color: #000000;
 }
 
@@ -750,14 +762,14 @@ section#totalguideview .terminal .terminal__box {
 .selecticon--img1{
     width:20%;
     float: left;
-    padding-top:5px ;
+    padding-top:10px ;
 }
 
 /*아이콘들 간격조정*/
 .select--text{
     float: left;
     padding-left:10px;
-    padding-top:5px ;
+    padding-top:10px ;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -902,6 +914,8 @@ footer{
 
 }
 
+
+
 /*푸터 두번째*/
 .footer--mid1{
     width: 100%;
@@ -933,7 +947,7 @@ footer{
 /*푸터 인증마크 개별부분*/
 .fum1__mark{
     float: left;
-    padding-left: 52%;
+    margin-left: 45%;
 }
 
 .fum1__mark>img{
@@ -961,6 +975,15 @@ footer{
     
 }
 
+
+
+
+
+
+
+
+
+
 .address2{
     float: left;
     padding-left: 20px;
@@ -982,4 +1005,74 @@ footer{
 .fum3--right{
     padding-left: 50px;
     font-size: 11px;
+}
+
+
+
+@media screen and (max-width: 959px) {
+        /*인천국제공항 & 인천국제공항공사 묶음*/
+    header .other__site {
+        display:none;
+    }
+    /*인천국제공항 버튼*/
+    .area-tab-sitebtn1{
+        display:none;
+    }
+    /*인천국제공항공사 버튼*/
+    .area-tab-sitebtn2{
+        display:none;
+    }
+
+    /*사이트맵~로그인 묶음*/
+    .sideUp__list {
+        display:none;    
+    }
+    /*사이트맵~로그인 개별*/
+    .sideUp__list ul li{
+        display:none;
+    }
+
+    /*언어 부분*/
+    .lang{
+        display:none;
+    }
+
+    /*헤더 아랫 부분*/
+    header .header--down {
+        display:none;
+    }
+
+    /*공항지도&검색*/
+    .side_icons{
+        display:none;
+    }
+        
+    .map-n-search{
+        display:none;
+    }
+
+    .map{
+        display:none;    
+    }
+
+    .airport__map{
+        display:none;
+    }
+
+    .search{
+        display:none;
+    }
+
+    .airport__search{
+        display:none;
+    }
+
+
+    .header--up .logo {
+        position: absolute;
+        float: left;
+        top:5px;
+        left: 25%;
+        margin: auto 0;
+    }
 }
