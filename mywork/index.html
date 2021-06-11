@@ -25,9 +25,8 @@
     <!--헤더에 아이콘 넣기-->
     <body>
         <header id="main--header" class="header">
-
             <!--헤더 첫번째 섹션(위) -->
-            <div class="header--up">
+            <div id="header--up" class="header--up">
                 <!--사이트 이동하기 -->
                 <div class="other__site">
                     <ul class="sub">
@@ -65,8 +64,9 @@
                 </div>
             </div>
 
-            <div class="header--down">
+            <div  id="header--down" class="header--down">
                 <!--메뉴-->
+                <img id="logo_sub" src="images\인천국제공항아이콘.png" alt="로고">
                 <ul class="headerdown__menu">
                     <li class="item">
                         <div class="menu__departure">출발</div>
@@ -111,14 +111,9 @@
                        </div>
                         
                     </div>
-                </ul>
-
-
             </div>
-
-           
-
         </header>
+
         <nav id="side__menu">
             <div id="departure">
                 <li>출발시간</li>
@@ -212,17 +207,56 @@
         
         <!--첫번째 섹션!-->
         <section id="mainview" class="section section1">
-                <div class="mainpicture">
-                    <div id="mainview__text">
-                        <div class="material-icons west">
-                            west
-                           </div>
-                        <li class="mainview__title">Incheon Airport</li>
-                        <div class="material-icons east">
-                            east
-                           </div>
-                        <li class="mainview__subtitle">예술, 그 가치를 뛰어넘다</li>
+            <div class="inner">
+                <!-- 수평 슬라이더 -->
+                <div id="slider">
+                    <!-- 왼쪽 화살표 -->
+                    <div class="material-icons arrow--left">
+                        west
                     </div>
+                    <!-- 오른쪽 화살표 -->
+                    <div class="material-icons arrow--right">
+                        east
+                    </div>
+                    <!-- 슬라이드 이미지들 -->
+                    <div class="slide slide1">
+                        <div class="slide__content">
+                            <div id="content1" class="content">
+                                <li class="content_main content_text1-1">Incheon Airport</li>
+                                <li class="content_sub content_text1-2">공항, 그 한계를 뛰어넘다</li>
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="slide__content">
+                            <div id="content2" class="content">
+                                <li class="content_main content_text2-1">Incheon Airport</li>
+                                <li class="content_sub content_text2-2">감동, 그 기대를 뛰어넘다</li>
+                            </div>                        </div>
+                    </div>
+                    <div class="slide slide3">
+                        <div class="slide__content">
+                            <div id="content3" class="content">
+                                <li class="content_main content_text3-1">Incheon Airport</li>
+                                <li class="content_sub content_text3-2">예술, 그 가치를 뛰어넘다</li>
+                            </div>                        </div>
+                    </div>
+                    <div class="slide slide4">
+                        <div class="slide__content">
+                            <div id="content4" class="content">
+                                <li class="content_main content_text4-1">Incheon Airport</li>
+                                <li class="content_sub content_text4-2">기술, 그 상상을 뛰어넘다</li>
+                            </div>                        </div>
+                    </div>
+                    <!-- 슬라이드 nav 역할을 하는 점들 -->
+                    <div class="dots">
+                        <div class="dot dot1"></div>
+                        <div class="dot dot2"></div>
+                        <div class="dot dot3"></div>
+                        <div class="dot dot4"></div>
+                    </div>
+                </div>
+            </div>
                     <div class="airplane">
                         <div class="airplane airplane__clickbox">
                             <label for="search__departure">
@@ -613,7 +647,7 @@
             </section>
 
         <!--푸터-->
-        <footer id="main--footer" class="footer">
+        <section id="main--footer" class="footer">
             <!--푸터 첫번째 섹션(위) -->
             <div class="footer--up">
                 <!--푸터 메뉴-->
@@ -715,6 +749,6 @@
             <div class="fum3--right">
                 <i>Copyright Incheon International Airport Corporation. All rights reserved.</i>
             </div>
-        </footer>
+        </section>
     </body>
 </html>

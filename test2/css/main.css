@@ -1,150 +1,49 @@
-
-/* COMMON */
-
-.inner {
-    width: 960px;
-    margin: 0 auto;
-    height: 100vh;
-    /* inner안의 모든 요소를 가운데 정렬 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    font-family:sans-serif;
+} 
+#fullpage {
+    position:relative;
+    top:0px;
+    z-index:9;
+    width:100%;
+    height:100%;
 }
 
-/* MAIN SLIDER */
-
-.inner #slider {
-    width: 100%;
-    height: 60vh;
-    /* 범위를 넘어서는 부분은 보이지 않도록 설정 */
-    overflow: hidden;
-    /* 가장자리를 둥글게 */
-    border-radius: 20px;
-    position: relative;
+.fullsection{
+    width:100%;
+    height:100%;
+    position:relative;
 }
-
-.inner #slider .slide {
-    /* 슬라이드 이미지는 원본 크기와 관계없이  */
-    /* 가운데를 기준으로 반복없이 주어진 영역을 꽉 채우도록 설정 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* 슬라이드의 화살표와 슬라이드 이미지 간의 레이어 순서를 설정하기 위한 값 */
-    position: relative;
-    z-index: 1;
-}
-
-/* 여섯 장의 슬라이드 이미지를 div 태그의 배경 이미지로 지정 */
-
-.inner #slider .slide1 {
-    background-image: url(../images/slides/slide01.jpeg);
-}
-
-.inner #slider .slide2 {
-    background-image: url(../images/slides/slide02.jpeg);
-}
-
-.inner #slider .slide3 {
-    background-image: url(../images/slides/slide03.jpeg);
-}
-
-.inner #slider .slide4 {
-    background-image: url(../images/slides/slide04.jpeg);
-}
-
-.inner #slider .slide5 {
-    background-image: url(../images/slides/slide05.jpeg);
-}
-
-.inner #slider .slide6 {
-    background-image: url(../images/slides/slide06.jpeg);
-}
-
-/* SLIDER CONTENT */
-
-/* 슬라이드 콘텐츠 */
-
-.inner #slider .slide__content {
-    /* 슬라이드 콘텐츠 영역은 #slider와 동일하게 잡아줍니다 */
-    width: 100%;
-    height: 60vh;
-    /* #slider 한가운데 콘텐츠가 위치하도록 가운데 정렬 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner #slider .slide__content span {
-    font-size: 80px;
-    color: #F6F5F0;
-}
-
-/* SLIDER ARROW */
-
-/* 슬라이드 왼쪽, 오른쪽 화살표에 공통으로 들어갈 속성 지정 */
-
-.inner #slider .arrow--left, .inner #slider .arrow--right {
-    /* 부모 요소인 #slider를 기준으로 절대위치를 지정 */
-    position: absolute;
-    /* #slider의 상단으로부터 #slider의 전체 높이의 50%에 해당하는 지점만큼 간격을 줍니다  */
-    top: 50%;
-    /* 크기를 80px만큼 주고 */
-    font-size: 80px;
-    /* margin-top 속성을 이용하여 그것의 절반만큼 위로 당겨줍니다 */
-    margin-top: -40px;
-    color: #F6F5F0;
-    cursor: pointer;
-    /* 슬라이드 이미지보다 위에 있도록 z-index값을 설정  */
-    z-index: 2;
-}
-
-/* 왼쪽 화살표는 #slider의 왼편에 붙도록 합니다 */
-
-.inner #slider .arrow--left {
-    left: 0px;
-}
-
-/* 오른쪽 화살표는 #slider의 오른편에 붙도록 합니다 */
-
-.inner #slider .arrow--right {
-    right: 0px;
-}
-
-/* SLIDER DOTS */
-
-.inner #slider .dots {
-    /* 부모 요소인 #slider를 기준으로 절대 위치 지정 */
-    position: absolute;
-    /* #slider 맨 아래 정가운데 오도록 */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    /* 슬라이드 이미지보다 위에 있는 레이어가 되도록 */
-    z-index: 2;
-    padding: 10px;
-    /* .dots 안에 있는 점들 .dot 가운데 정렬 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 슬라이드 점들 */
-
-.inner #slider .dots .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 5px;
-    background: #F6F5F0;
-    margin: 0 3px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-
-/* 슬라이드를 시작할 때 첫번째 슬라이드 이미지가 보일 것이므로
-첫번째 점 또한 다르게 보이도록 설정  */
-
-.inner #slider .dots .dot1 {
-    background: #1107ff;
-    width: 30px
+.full1{
+    background:red;
+} 
+.full2{
+    background:yellow;
+} 
+.full3{
+    background:green;
+} 
+.full4{
+    background:blue;
+} 
+.full5{
+    background:purple;
+} 
+#fullpage span{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    font-size:4em;
+    font-weight:bold;
+} 
+.full2 span{
+    color:#000;
 }
