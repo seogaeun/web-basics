@@ -102,6 +102,7 @@ header .other__site {
     cursor: pointer;
     padding-left:5px;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 /*언어 부분*/
@@ -153,6 +154,7 @@ header .header--down {
     color:rgb(0, 0, 0);
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -239,7 +241,7 @@ nav {
 }
 #departure{
     float: left; width:11%; height: 100%; margin-left: 10px; padding-top: 3%; font-size: 13px;
-    margin-left: 195px;
+    margin-left: 190px;
     list-style: none;
     text-align: center;
     border-right: 1px solid #6d6d6d;
@@ -349,7 +351,7 @@ nav {
 
 .inner {
     width: 100%;
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     /* inner안의 모든 요소를 가운데 정렬 */
     display: flex;
@@ -360,7 +362,7 @@ nav {
 /* MAIN SLIDER */
 
 .inner #slider {
-    margin-top: 0%;
+    margin-bottom: 0;
     width: 100%;
     height: 100%;
     /* 범위를 넘어서는 부분은 보이지 않도록 설정 */
@@ -406,12 +408,13 @@ nav {
 .inner #slider .slide__content {
     /* 슬라이드 콘텐츠 영역은 #slider와 동일하게 잡아줍니다 */
     width: 100%;
-    height: 1000px;
+    height: 100%;
     /* #slider 한가운데 콘텐츠가 위치하도록 가운데 정렬 */
     position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 
@@ -423,22 +426,22 @@ nav {
 }
 /*슬라이드 안 글자 내용*/
 #content1{
-    height: 40%;
-    padding-top:7%;
+    height: 100%;
+    padding-top:15%;
     width: 70%;
 }
 
 #content2{
-    height: 40%;
-    padding-top:7%;
+    height: 100%;
+    padding-top:15%;
     width: 70%;
     text-align: right;
     padding-left: 300px;
 }
 
 #content3{
-    height: 40%;
-    padding-top:7%;
+    height: 100%;
+    padding-top:15%;
     width: 70%;
     text-align: right;
     padding-left: 300px;
@@ -446,8 +449,8 @@ nav {
 
 
 #content4{
-    height: 40%;
-    padding-top:7%;
+    height: 100%;
+    padding-top:15%;
     width: 70%;
     color:rgb(0, 0, 0);
     text-align: left;
@@ -482,7 +485,7 @@ nav {
     /* 부모 요소인 #slider를 기준으로 절대위치를 지정 */
     position: absolute;
     /* #slider의 상단으로부터 #slider의 전체 높이의 50%에 해당하는 지점만큼 간격을 줍니다  */
-    top: 60%;
+    top: 45%;
     /* 크기를 80px만큼 주고 */
     font-size: 45px;
     /* margin-top 속성을 이용하여 그것의 절반만큼 위로 당겨줍니다 */
@@ -518,7 +521,7 @@ nav {
     /* 부모 요소인 #slider를 기준으로 절대 위치 지정 */
     position: absolute;
     /* #slider 맨 아래 정가운데 오도록 */
-    bottom: 0;
+    bottom: 27%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -551,21 +554,6 @@ nav {
     width: 30px
 }
 
-.section1{
-    width: 100%;
-    height: 900px;
-    background-repeat: no-repeat;
-}
-
-
-.mainpicture{
-    width: 100%;
-    height:150%;
-    position: relative;
-
-}
-
-
 
 /*메인화면 제목&소제목*/
 #mainview__text{
@@ -579,6 +567,7 @@ nav {
     color: rgb(255, 255, 255);
     font-size: 60px;
     font-weight: 10px;
+    font-weight: bold;
 }
 
 /*메인화면 소제목*/
@@ -591,16 +580,20 @@ nav {
 /*항공편 검색 파트*/
 .airplane{
     width: 100%;
-    height: 21%;
+    height: 5%;
     background-color: rgb(28, 28, 145);
     opacity: 80%;
-    float: right;
+    z-index: 1;
+    margin-top: 35.5%;
+    position: absolute;
+
 }
 
 /*출발&도착 파트*/
 .airplane__clickbox{
     margin-top: 3%;
     padding-left: 30%;
+    height: 30px;
 }
 
 /*출발 버튼*/
@@ -692,19 +685,20 @@ nav {
 /*항공편 검색 설명 글*/
 .airplane>li{
     position: absolute;
-    left: 32%;
+    left: 30%;
     align-items: center;
     display: flex;
     color: #f6f5f0b6;
     list-style: none;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    bottom: 10%;
 }
 
 /*섹션2 공항이용가이드*/
 .section2{
     width: 100%;
-    height: 800px;
+    height: 100%;
     background-image: url("https://www.airport.kr/static/ap/images/bg_main_section_01.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -715,17 +709,13 @@ section .wrapper .maintitle{
     width: 100%;
     height: 80px;
     display: flex;
-    padding-top: 50px;
+    padding-top: 5%;
     list-style:none;
-}
-
-/*공항이용가이드 제목*/
-#guide__maintext{
     float: left;
     text-align: center;
-    padding-top: 3%;
     padding-left: 40%;
 }
+
 
 /*공항이용가이드 한국어*/
 .titlekor{
@@ -742,7 +732,7 @@ section .wrapper .maintitle{
 /*큰 박스 123*/
 section .wrapper .box{
     width: 100%;
-    height: 80%;
+    height: 10%;
     display: flex;
     padding-top: 50px;
     padding-left: 150px;
@@ -759,12 +749,13 @@ section .wrapper .box{
 
 /*박스 모양 창 안 제목들*/
 .guidetitle{
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /*박스 모양 창 안 부제목들*/
 .guidesub{
-    font-size: 5px;
+    font-size: 10px;
 
 }
 
@@ -775,7 +766,8 @@ section .wrapper .guidebox{
     margin-top:5%;
     font-family: nanumsq, sans-serif;
     padding: 0px 25px 10px 0;
-    float: left;
+    
+
 }
 
 /*박스 모양 창 윗부분*/
@@ -804,7 +796,8 @@ section .wrapper .guidebox .box--up {
     width: 70%;
     font-size: 13px;
     text-align: start;
-    margin-top:35px;
+    margin-top:25px;
+     list-style: "· ";
 }
 
 /*2번 박스 모양 창 윗부분*/
@@ -827,7 +820,7 @@ section .wrapper .guidebox .box--up {
 /*박스 모양 창 아랫부분*/
 section .wrapper .guidebox .box--down {
     background: #ffffff;
-    height: 350px;
+    height: 300px;
     width: 100%;
     float: left;
     box-sizing: border-box;
@@ -839,6 +832,7 @@ section .wrapper .guidebox .box--down {
     width: 30%;
     margin-top:10px;
     font-size: 15px;
+    font-weight: bold;
 
     
 }
@@ -847,11 +841,11 @@ section .wrapper .guidebox .box--down {
 
 /*박스 안 내용(리스트 제목과 리스트들)*/
 .guidelist{
-    margin-top: 10px;
+    margin-top: 5px;
     padding-left: 10px;
     width: 100%;
     overflow: hidden;
-    list-style: "· ";
+   
 }
 
 /*섹션3 공항이용가이드*/
@@ -869,7 +863,7 @@ section .wrapper .guidebox .box--down {
 section#totalguideview .terminal {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 /*큰상자 기타 세부사항*/
@@ -877,8 +871,8 @@ section#totalguideview .terminal {
     text-align: center;
     width:100%;
     height: 50px;
-    font-size: 35px;
-    padding-top: 40px;
+    font-size: 40px;
+    padding-top: 80px;
     color: white;
 }
 
@@ -886,7 +880,7 @@ section#totalguideview .terminal {
 /*제 1 여객터미널 상자*/
 .terminal1__box{
     background: white;
-    border-right: 1px solid #000000;
+    border-right: 1px solid #e6e6e6;
 }
 
 /*제 1 여객터미널 제목 상자*/
@@ -901,6 +895,7 @@ section#totalguideview .terminal {
     text-align: center;
     font-size: 25px;
     color: black;
+    font-weight: bold;
 }
 
 /*제 2 여객터미널 상자*/
@@ -919,6 +914,7 @@ section#totalguideview .terminal {
     text-align: center;
     font-size: 25px;
     color: black;
+    font-weight: bold;
 }
 /*내용 부분*/
 .terminal__select{
@@ -939,14 +935,14 @@ section#totalguideview .terminal .terminal__box {
 .selecticon--img1{
     width:20%;
     float: left;
-    padding-top:10px ;
+    padding-top:20px ;
 }
 
 /*아이콘들 간격조정*/
 .select--text{
     float: left;
-    padding-left:10px;
-    padding-top:10px ;
+    padding-left:15px;
+    padding-top:25px ;
     font-family: 'Roboto', sans-serif;
 }
 

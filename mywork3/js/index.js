@@ -90,23 +90,33 @@ const sideMenuEl = document.getElementById('side__menu')
 const headerLogoSubEl = document.getElementById('logo_sub')
 const headerMenuEl = document.getElementById('main--header')
 const QuickMenuEl = document.getElementById('quick')
-
+const MenudepartureEl = document.getElementById('departure')
+const MenuarrivalEl = document.getElementById('arrival')
+const MenuexchangeEl = document.getElementById('exchange')
+const MenutrafficEl = document.getElementById('traffic')
+const MenushoppingEl = document.getElementById('shopping')
+const Menuguide__informationEl = document.getElementById('guide__information')
 window.addEventListener("scroll",function(){
-  //스크롤 위치가 300이상이면
+  //스크롤 위치가 300이하이면
 if(window.scrollY<=300){
       //헤더 요소의 높이를 줄인다
       QuickMenuEl.style.transform = 'translateX(0%)'
-      headerMenuEl.style.transform = 'translateY(-120%)'
+      headerMenuEl.style.transform = 'translateY(-130%)'
       menuOpenEl.style.display = 'none'
       menuCloseEl.style.display = 'none'
-      headerLogoSubEl.style.display = "none";
-
+      headerLogoSubEl.style.display = "none"
          
 }else if(window.scrollY<=1200){
   headerMenuEl.style.transform = 'translateY(0%)'
   headerLogoSubEl.style.display = "none";
   QuickMenuEl.style.transform = 'translateX(-100%)'
-
+  MenudepartureEl.style.marginLeft = "190px"
+  MenudepartureEl.style.paddingTop = "2%"
+  MenuarrivalEl.style.paddingTop = "3%"
+  MenuexchangeEl .style.paddingTop = "3%"
+  MenutrafficEl .style.paddingTop = "3%"
+  MenushoppingEl .style.paddingTop = "3%"
+  Menuguide__informationEl .style.paddingTop = "3%"
 
 
 }else{
@@ -116,6 +126,13 @@ if(window.scrollY<=300){
   headerMenuEl.style.transform = 'translateY(-70%)'
   headerLogoSubEl.style.display = "block";
   QuickMenuEl.style.transform = 'translateX(-100%)'
+  MenudepartureEl.style.marginLeft = "245px"
+  MenudepartureEl.style.paddingTop = "2%"
+  MenuarrivalEl.style.paddingTop = "2%"
+  MenuexchangeEl .style.paddingTop = "2%"
+  MenutrafficEl .style.paddingTop = "2%"
+  MenushoppingEl .style.paddingTop = "2%"
+  Menuguide__informationEl .style.paddingTop = "2%"
 }
 })
 

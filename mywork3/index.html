@@ -202,7 +202,7 @@
         <main id ="fullpage">
                     <!--인트로 비디오-->
             <section id="introplayer" class="section section0 ">
-            <video src="https://www.airport.kr/cmm/stream.do" autoplay controls>
+            <video src="https://www.airport.kr/cmm/stream.do"  autoplay="autoplay" muted="muted">
         </video>
             </section>
     
@@ -247,7 +247,8 @@
                         <div id="content4" class="content">
                             <li class="content_main content_text4-1">Incheon Airport</li>
                             <li class="content_sub content_text4-2">기술, 그 상상을 뛰어넘다</li>
-                        </div>                        </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- 슬라이드 nav 역할을 하는 점들 -->
                 <div class="dots">
@@ -256,41 +257,38 @@
                     <div class="dot dot3"></div>
                     <div class="dot dot4"></div>
                 </div>
-            </div>
-        </div>
-                <div class="airplane">
-                    <div class="airplane airplane__clickbox">
-                        <label for="search__departure">
-                            <span class="updown-icons material-icons">
-                                flight_takeoff
-                                </span>
-                            <a href="#" class="area-tab-btn1">출발</a>
-                        </label>
 
-                        <label for="search__arrival">
-                            <span class="updown-icons material-icons">
-                                flight_land
-                                </span>
-                            <a href="#" class="area-tab-btn2">
-                                도착
-                            </a>
-                        </label>      
-                        </div>
-                        <div class="airplane__search">
-                            <li id=search__index>항공편 검색</li>
-                            <input type="text" id="goto__input" name="text" value="항공편/목적지를 입력하세요.">
-                            <span class="material-icons">
-                                search
+            </div>
+            <div class="airplane">
+                <div class="airplane airplane__clickbox">
+                    <label for="search__departure">
+                        <span class="updown-icons material-icons">
+                            flight_takeoff
                             </span>
-                            <img class="weather--img" src="https://www.airport.kr/static/ap/images/icon15.png" alt="날씨">
-                            <li id="weather">20/20 ℃</li>
-                        </div>
-                        <br><br><br><li>※전체 운항시간표는 검색버튼을 클릭하면 보실 수 있습니다.</li>
+                        <a href="#" class="area-tab-btn1">출발</a>
+                    </label>
+
+                    <label for="search__arrival">
+                        <span class="updown-icons material-icons">
+                            flight_land
+                            </span>
+                        <a href="#" class="area-tab-btn2">
+                            도착
+                        </a>
+                    </label>      
                     </div>
+                    <div class="airplane__search">
+                        <li id=search__index> 항공편 검색</li>
+                        <input type="text" id="goto__input" name="text" value="항공편/목적지를 입력하세요.">
+                        <span class="material-icons">
+                            search
+                        </span>
+                        <img class="weather--img" src="https://www.airport.kr/static/ap/images/icon15.png" alt="날씨">
+                        <li id="weather">20/20 ℃</li>
+                    </div>
+                    <br><br><br><li>※전체 운항시간표는 검색버튼을 클릭하면 보실 수 있습니다.</li>
             </div>
-
-            
-
+        </div>        
             </section>
 
     <!--두번째 섹션: 공항 이용 가이드-->
@@ -510,7 +508,10 @@
                                 
                                 <!--목록3(환승투어)-->
                                 <div class="guidelist check3">
-                                    <div class="list__title">환승투어</div>
+                                    <div class="list__title">
+                                        환승투어
+                                    </div>
+                                    
                                     <!--목록3 리스트-->
                                     <class class="checklist">
                                         <li>환승투어 안내</li>
@@ -747,9 +748,9 @@
                 <div class="fum3__address1">인천국제공항공사:22382 인천시 중구 공항로 424번길 47</div>
                 </li>
                 <!--푸터 저작권 표시?-->
-                <div class="fum3--right">
+            <div class="fum3--right">
                 <i>Copyright Incheon International Airport Corporation. All rights reserved.</i>
-                </div>
+        </div>
         </div>
         
  
