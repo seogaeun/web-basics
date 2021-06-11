@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<!--favicon.ico부터 넣어봐요-->   
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>인천국제공항</title>
+     <!--파비콘 아이콘-->   
+        <link rel="icon" href="images\인천국제공항아이콘.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+        <!--main.css보다 먼저 있어야함-->
+        <!-- Google Material Design 마찬가지로 main.css앞-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- 각 브라우저의 기본 스타일을 초기화 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css"> 
+        <script defer src="js\index.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!--화면 슬라이드-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="jquery.fullPage.js"></script>
+
+    </head>
+    <!--헤더에 아이콘 넣기-->
+    <body>
+        <header id="main--header" class="header">
+            <!--헤더 첫번째 섹션(위) -->
+            <div id="header--up" class="header--up">
+                <!--사이트 이동하기 -->
+                <div class="other__site">
+                    <ul class="sub">
+                        <label for="airport__site">
+                            <a href="#" class="area-tab-sitebtn1">인천국제공항</a>
+                        </label>
+                        <label for="airportIc__site">
+                            <a href="#" class="area-tab-sitebtn2">인천국제공항공사</a>
+                        </label>
+
+                    </ul>
+                </div>
+                <!--로고 이미지 -->
+                <a href="#" class="logo">
+                    <img src="https://www.airport.kr/static/ap/images/logo.png" alt="로고">
+                </a>
+                <!--로그인, 회원가입, 고객센터, 사이트맵 -->
+                <div class="sideUp__list">
+                    <ul class="sub">
+                        <li>로그인</li>
+                        <li>· 회원가입</li>
+                        <li>· 고객센터</li>
+                        <li>· 사이트맵</li>
+                    </ul>
+                </div>
+                <!--언어 -->
+                <div class="lang">
+                    <select>
+                        <option hidden>Language</option>
+                        <option>한국어</option>
+                        <option>ENGLISH</option>
+                        <option>中國</option>
+                        <option>日本語</option>
+                    </select>
+                </div>
+            </div>
+
+            <div  id="header--down" class="header--down">
+                <!--메뉴-->
+                <img id="logo_sub" src="images\인천국제공항아이콘.png" alt="로고">
+                <ul class="headerdown__menu">
+                    <li class="item">
+                        <div class="menu__departure">출발</div>
+                    </li>
+                    <li class="item">
+                        <div class="menu__arrival">도착</div>
+                    </li>
+                    <li class="item">
+                        <div class="menu__exchange">환승</div>
+                    </li>
+                    <li class="item">
+                        <div class="menu__traffic">교통·주차</div>
+                    </li>
+                    <li class="item">
+                        <div class="menu__shopping">쇼핑·식당</div>
+                    </li>
+                    <li class="item">
+                        <div class="menu__guide">안내·서비스</div>
+                    </li>
+                </ul>
+
+                
+
+    
+                        <!--검색-->
+                    <div class="map-n-search">
+                        <div class="map">
+                            <div class="side_icons material-icons">
+                                place
+                               </div>
+                           <a href="#" class="airport__map">
+                               공항지도
+                           </a>    
+                        </div>
+                       <div class="search">
+                             <span class="side_icons material-icons">
+                                search
+                            </span>
+                            <a href="#" class="airport__search">
+                                검색
+                            </a>
+                       </div>
+                        
+                    </div>
+            </div>
+        </header>
+
+        <nav id="side__menu">
+            <div id="departure">
+                <li>출발시간</li>
+                <li>출국절차</li>
+                <li>출국체크사항</li>
+                <li>취항정보</li>
+            </div>
+
+            <div id="arrival">
+                <li>도착시간</li>
+                <li>입국절차</li>
+                <li>환영안내</li>
+            </div>
+            <div id="exchange">
+                <li>환승안내</li>
+                <li>환승편의시설</li>
+                <li>환승투어</li>
+            </div>
+            <div id="traffic">
+                <li>오시는길</li>
+                <li>주차안내</li>
+                <li>대중교통</li>
+                <li>공항셔틀버스</li>
+                <li>렌터카</li>
+            </div>
+            <div id="shopping">
+                <li>면세점쇼핑</li>
+                <li>일반쇼핑</li>
+                <li>식당</li>
+                <li>이벤트</li>
+            </div>
+            <div id="guide__information">
+                <li>터미널 안내</li>
+                <li>공항지도</li>
+                <li>안내·편의시설</li>
+                <li>공항즐기기</li>
+                <li>맞춤형 서비스</li>
+            </div>
+        </nav>
+
+        <div id="quick">
+            <table class="quick-sns">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img class="quick_table q-sns1" src="images\sns1.png" alt="instagram">
+                            <img class="quick_table q-sns2" src="images\sns2.png" alt="facebook">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="quick_table q-sns3" src="images\sns3.png" alt="youtube">
+                            <img class="quick_table q-sns4" src="images\sns4.png" alt="naverblog">
+                        </td>
+                    </tr>                
+                </tbody>
+            </table>
+            <div class="quickmenu checkmyter">
+                <img class="quick img1" src="images\quick1.png" alt="마킹">
+                   <div>내 터미널<br> 확인하기</div>
+            </div>
+            <div class="quickmenu see-oneeye">
+                <img class="quick img2" src="images\quick2.png" alt="인천공항 로고">
+                   <div>인천공항 <br> 한눈에보기</div>
+            </div>
+            <div class="quickmenu between-ter">
+                <img class="quick img3" src="images\quick3.png" alt="터미널 간 이동">
+                   <div>터미널 간 <br> 이동</div>
+            </div>
+            <div class="quickmenu online-reserve">
+                <img class="quick img4" src="images\quick4.png" alt="온라인 예약">
+                   <div>온라인 예약</div>
+            </div>
+            <div class="quickmenu chatbot">
+                <img class="quick img5" src="images\quick5.png" alt="챗봇">
+                   <div>챗봇</div>
+            </div>
+            <a href="#" class="top">top</a>
+        </div>
+
+
+        <main id ="fullpage">
+                    <!--인트로 비디오-->
+            <section id="introplayer" class="section section0 ">
+            <video src="https://www.airport.kr/cmm/stream.do" autoplay controls>
+        </video>
+            </section>
+    
+    <!--첫번째 섹션!-->
+            <section id="mainview" class="section section1 ">
+        <div class="inner">
+            <!-- 수평 슬라이더 -->
+            <div id="slider">
+                <!-- 왼쪽 화살표 -->
+                <div class="material-icons arrow--left">
+                    west
+                </div>
+                <!-- 오른쪽 화살표 -->
+                <div class="material-icons arrow--right">
+                    east
+                </div>
+                <!-- 슬라이드 이미지들 -->
+                <div class="slide slide1">
+                    <div class="slide__content">
+                        <div id="content1" class="content">
+                            <li class="content_main content_text1-1">Incheon Airport</li>
+                            <li class="content_sub content_text1-2">공항, 그 한계를 뛰어넘다</li>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide__content">
+                        <div id="content2" class="content">
+                            <li class="content_main content_text2-1">Incheon Airport</li>
+                            <li class="content_sub content_text2-2">감동, 그 기대를 뛰어넘다</li>
+                        </div>                        </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide__content">
+                        <div id="content3" class="content">
+                            <li class="content_main content_text3-1">Incheon Airport</li>
+                            <li class="content_sub content_text3-2">예술, 그 가치를 뛰어넘다</li>
+                        </div>                        </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="slide__content">
+                        <div id="content4" class="content">
+                            <li class="content_main content_text4-1">Incheon Airport</li>
+                            <li class="content_sub content_text4-2">기술, 그 상상을 뛰어넘다</li>
+                        </div>                        </div>
+                </div>
+                <!-- 슬라이드 nav 역할을 하는 점들 -->
+                <div class="dots">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                </div>
+            </div>
+        </div>
+                <div class="airplane">
+                    <div class="airplane airplane__clickbox">
+                        <label for="search__departure">
+                            <span class="updown-icons material-icons">
+                                flight_takeoff
+                                </span>
+                            <a href="#" class="area-tab-btn1">출발</a>
+                        </label>
+
+                        <label for="search__arrival">
+                            <span class="updown-icons material-icons">
+                                flight_land
+                                </span>
+                            <a href="#" class="area-tab-btn2">
+                                도착
+                            </a>
+                        </label>      
+                        </div>
+                        <div class="airplane__search">
+                            <li id=search__index>항공편 검색</li>
+                            <input type="text" id="goto__input" name="text" value="항공편/목적지를 입력하세요.">
+                            <span class="material-icons">
+                                search
+                            </span>
+                            <img class="weather--img" src="https://www.airport.kr/static/ap/images/icon15.png" alt="날씨">
+                            <li id="weather">20/20 ℃</li>
+                        </div>
+                        <br><br><br><li>※전체 운항시간표는 검색버튼을 클릭하면 보실 수 있습니다.</li>
+                    </div>
+            </div>
+
+            
+
+            </section>
+
+    <!--두번째 섹션: 공항 이용 가이드-->
+            <section id="guideview" class="section section2 ">
+        <div class="wrapper">
+            <!--제목-->
+            <div class="maintitle">
+                <div id="guide__maintext">
+                    <li class="titlekor">공항 이용 가이드</li>
+                    <li class="titleeng">Manual For Passenger</li>
+                </div>
+            </div>
+            <!--박스-->
+            <section class="box">
+                <!--1번박스(여행 전 확인 할 것)-->
+                <div class="guidebox section2__box1">
+                    <!--위쪽 부분(사진 배경과 소제목 부분)-->
+                    <div class="box--up">
+                        <div id="guidetext">
+                            <li class="guidetitle">여행 전 확인 할 것</li>
+                            <li class="guidesub">공항 오기 전 확인할 정보를 알려드립니다.</li>
+                        </div>                       
+                    </div>
+                    <!--아래쪽 부분(목록 부분)-->
+                    <class class="box--down">
+                        <div class="before__trevel">
+                            <!--목록1(항공편)-->
+                            <div class="guidelist check1">
+                                <!--목록1 제목-->
+                                <div class="list__title">항공편</div>
+                                <!--목록1 리스트-->
+                                    <class class="checklist">
+                                        <li>여객 출발 시간표</li>
+                                        <li>여객 출발 정기 운항편</li>
+                                        <li>여객 도착 시간표</li>
+                                        <li>여객 도착 정기 운항편</li>
+                                    </class>
+                                </div>
+
+                                <!--목록2(여행준비)-->
+                                <div class="guidelist check2">
+                                    <!--목록2 제목-->
+                                    <div class="list__title">여행준비</div>
+                                    <!--목록2 리스트-->
+                                    <class class="checklist">
+                                        <!--목록2 리스트__(2*2)-->
+                                        <div class="prepare-list1">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="list1-1">
+                                                        <td>
+                                                            <li>환전</li>
+                                                        </td>
+                                                        <td>
+                                                            <li>보험</li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="list1-2">
+                                                        <td>
+                                                            <li>택배</li>
+                                                        </td>
+                                                        <td>
+                                                            <li>로밍</li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>    
+                                            </table>                                                
+                                        </div>
+                                        <!--목록2 리스트__(2*2)밑부분-->
+                                        <li>기내반입 금지물품</li>
+                                        <li>코로나19 검사센터</li>
+                                    </class> 
+                                </div>
+                                <!--목록3(항공편)-->
+                                <div class="guidelist check3">
+                                    <!--목록2 제목-->
+                                    <div class="list__title">항공편</div>
+                                    <!--목록2 리스트-->
+                                    <class class="checklist">
+                                        <li>오시는길</li>
+                                        <li>대중교통</li>
+                                        <li>이용안내</li>
+                                    </class>
+                                </div>
+                            </div>
+                        </class>
+                    </div>
+        
+    
+                <!--2번박스(공항에서 할 것)-->
+                <div class="guidebox section2__box2">
+                    <!--위쪽 부분(사진 배경과 소제목 부분)-->
+                    <div class="box--up">
+                        <div id="guidetext">
+                            <li class="guidetitle">공항에서 할 것</li>
+                            <li class="guidesub">인천공항 최적의 서비스를 안내해드립니다.</li>
+                        </div>
+                    </div>
+                    <!--아래쪽 부분(목록 부분)-->
+                    <div class="box--down">
+                        <div class="play__airport">
+                            <!--목록1(빠른 수속 팁)-->
+                            <div class="guidelist play1">
+                                <!--목록1 제목-->
+                                    <div class="list__title">빠른 수속 팁</div>
+                                    <!--목록1 리스트-->
+                                    <class class="checklist">
+                                        <li>셀프체크인/셀프백드랍</li>
+                                        <li>자동출국심사</li>
+                                        <li>정부종합행정센터</li>
+                                    </class>
+                                </div>
+
+                                <!--목록2(공항즐기기)-->
+                                <div class="guidelist play2">
+                                    <!--목록2 제목-->
+                                    <div class="list__title">공항즐기기</div>
+                                    <!--목록2 리스트-->
+                                    <class class="checklist">
+                                        <!--목록2 리스트__(2*3)-->
+                                        <div class="prepare-list1">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="list1-1">
+                                                        <td>
+                                                            <li>면세점</li>
+                                                        </td>
+                                                        <td>
+                                                            <li>쇼핑</li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="list1-2">
+                                                        <td>
+                                                            <li>식당</li>
+                                                        </td>
+                                                        <td>
+                                                            <li>라운지</li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="list1-2">
+                                                        <td>
+                                                            <li>문화공연</li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>    
+                                            </table>
+                                        </div>
+                                    </class> 
+                                </div>
+                                
+                                <!--목록3(교통약자서비스)-->
+                                <div class="guidelist play3">
+                                    <!--목록3 제목-->
+                                    <div class="list__title">교통약자 서비스</div>
+                                    <!--목록3 리스트-->
+                                    <class class="checklist">
+                                        <li>임산부/유아/어린이 동반</li>
+                                        <li>교통약자동반</li>
+                                        <li>애완동물동반</li>
+                                    </class>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+                <!--3번박스(환승할 때 할 것)-->
+                <div class="guidebox section2__box3">
+                    <!--위쪽 부분(사진 배경과 소제목 부분)-->
+                    <div class="box--up">
+                        <div id="guidetext">
+                            <li class="guidetitle">환승할 때 할 것</li>
+                            <li class="guidesub">환승객들을 위한 특별한 혜택을 안내해드립니다.</li>
+                        </div>
+                    </div>
+                    <!--아래쪽 부분(목록 부분)-->
+                    <div class="box--down">
+                        <div class="todo__exchange">
+                            <!--목록1(환승안내)-->
+                            <div class="guidelist check1">
+                                    <div class="list__title">환승안내</div>
+                                    <!--목록1 리스트-->
+                                    <class class="checklist">
+                                        <li>제1 여객터미널에서 환승하기</li>
+                                        <li>탑승동에서 환승하기</li>
+                                        <li>제2 여객터미널에서 환승하기</li>
+                                        <li>내항기 환승</li>
+                                    </class>
+                                </div>
+
+                                <!--목록2(환승편의시설)-->
+                                <div class="guidelist check2">
+                                    <div class="list__title">환승편의시설</div>
+                                    <!--목록2 리스트__(2*2)-->
+                                    <class class="checklist">
+                                        <div class="prepare-list1">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="list1-1">
+                                                        <td>
+                                                            <li>호텔</li>
+                                                        </td>
+                                                        <td>
+                                                            <li>라운지</li>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="list1-2">
+                                                        <td>
+                                                            <li>휴식(케어/마사지)</li>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>    
+                                            </table>
+                                        </div>
+                                    </class> 
+                                </div>
+                                
+                                <!--목록3(환승투어)-->
+                                <div class="guidelist check3">
+                                    <div class="list__title">환승투어</div>
+                                    <!--목록3 리스트-->
+                                    <class class="checklist">
+                                        <li>환승투어 안내</li>
+                                        <li>코스소개</li>
+                                        <li>환승투어 예약</li>
+                                    </class>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+    <!--세번째 섹션: 공항 이용 가이드-->
+            <section id="totalguideview" class="section section3 ">
+            <div class="totalguide_title">
+                인천국제공항 종합 안내
+            </div>
+            <div id="terminal__section" class="terminal">
+                <div class="terminal__box terminal1__box">
+                    <div class="terminal1__title">
+                        제1여객터미널
+                    </div>
+                    <div class="terminal__select terminal1select">
+                        <table class="selectbox--list">
+                            <tbody>
+                                <tr>
+                                    
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal7.png" alt="dutyShopping">
+                                        <div class="select--text">면세점쇼핑</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal1.png" alt="shopping">
+                                        <div class="select--text">일반쇼핑</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2.png" alt="cafeteria">
+                                        <div class="select--text">식당</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal3.png" alt="convenience">
+                                        <div class="select--text">편의시설</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal5.png" alt="guideDesk">
+                                        <div class="select--text">안내데스크</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal4.png" alt="24hoursStore">
+                                        <div class="select--text">24시간 매장</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="terminal__box terminal2__box">
+                    <div class="terminal2__title">
+                        제2여객터미널
+                    </div>
+                    <div class="terminal__select terminal2select">
+                        <table class="selectbox--list">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-7.png" alt="dutyShopping">
+                                        <div class="select--text">면세점쇼핑</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-1.png" alt="shopping">
+                                        <div class="select--text">일반쇼핑</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-2.png" alt="cafeteria">
+                                        <div class="select--text">식당</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-3.png" alt="convenience">
+                                        <div class="select--text">편의시설</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-5.png" alt="guideDesk">
+                                        <div class="select--text">안내데스크</div>
+                                    </td>
+                                    <td>
+                                        <img class="selecticon--img1" src="images\terminal2-4.png" alt="24hoursStore">
+                                        <div class="select--text">24시간 매장</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+    <!--푸터-->
+            <footer id="main--footer" class="footer section fp-auto-height">
+                <!-- 푸터 배너-->
+                <div class="mainbanner">
+                    <div class="material-icons before">
+                            navigate_before
+                       </div>
+                       <div class="banner_img_files">
+                            <img class="bannerimg1" src="images\banner1.gif" alt="배너 이미지 1번">
+                            <img class="bannerimg2" src="images\banner2.jpg" alt="배너 이미지 2번">
+                            <img class="bannerimg3" src="images\banner3.png" alt="배너 이미지 3번">
+                       </div>
+                    <div class="material-icons next">
+                        navigate_next
+                       </div>
+                    
+                    <div class="etcplay">
+                        <div class="bannerplay">
+                            <label for="search__departure">
+                                <span class="stop-to-play__icons material-icons">
+                                    play_arrow
+                                    </span>
+                            </label>
+    
+                            <label for="search__arrival">
+                                <span class="stop-to-play__icons material-icons">
+                                    pause
+                                    </span>
+                            </label>      
+                        </div>
+                    </div>
+                </div>
+                <!--푸터 기타 정보-->
+                <div class="footer--etc">
+                               <!--푸터 첫번째 섹션(위) -->
+                <div class="footer--up">
+            <!--푸터 메뉴-->
+            <ul class="footerup__menu">
+                <li class="fu--item">
+                    <div class="fmenu__home">홈</div>
+                </li>
+                <li class="fu--item">
+                    <div class="fmenu__serviceTerms">이용약관</div>
+                </li>
+                <li class="fu--item">
+                    <div class="fmenu__personInfo">개인정보처리방침</div>
+                </li>
+                <li class="fu--item">
+                    <div class="fmenu__airSecurity">항공안전신고</div>
+                </li>
+                <li class="fu--item">
+                    <div class="fmenu__rightProtect">저작권보호정책이메일 주소 무단수집 거부</div>
+                </li>
+                <li class="fu--item">
+                    <div class="fmenu__guideBlind">시각장애인이용안내</div>
+                </li>
+            </ul>
+            <!--푸터 sns리스트 -->
+            <div class="sns__list">
+                <img class="mid1 sns1" src="images\sns_face.png" alt="facebook">
+                <img class="mid1 sns2" src="images\sns_insta.png" alt="instagram">
+                <img class="mid1 sns3" src="images\sns_you.png" alt="youtube">
+                <img class="mid1 sns4" src="https://www.airport.kr/static/ap/images/ico_weibo.png" alt="weido">
+                <img class="mid1 sns5" src="images\sns_naver.png" alt="naverblog">
+                <img class="mid1 sns6" src="images\sns_wblog.png" alt="wordpressblog">
+            </div>
+                     </div>
+                    <!--푸터 중간부분1-->
+                    <div class="footer--mid1">
+                    <ul>
+                     <!--푸터 인천공항 연락처 -->
+                        <li class="fum1--item">
+                        <div class="fum1__center">인천공항 고객센터</div>
+                        <div class="fum1__centernumber">1577-2600</div>
+                        <!--푸터 인증?마크 -->
+                        <div class="fum1__mark">
+                        <img class="ratecenter1" src="https://www.airport.kr/static/ap/images/logo_web_access_mark.png" alt="한국웹접근평가센터">
+                        <img class="ratecenter2" src="https://www.airport.kr/static/ap/images/logo_google_play_badge.png" alt="안드로이드 앱 다운로드 로고">
+                        </div>
+                        </li>
+                    </ul>
+
+        </div>
+        
+        <!--푸터 중간부분2 -->
+        <div class="footer--mid2">
+            <!--푸터 인천공항 주소-->
+            <ul class="fum2__list">
+                <li class="fum2text address1">
+                    <div class="fum2__address1">인천국제공항 제1여객터미널:22382 인천시 중구 공항로 272</div>
+                </li>
+                <li class="fum2text address2">
+                    <div class="fum2__address2">인천국제공항 제2여객터미널:22382 인천시 중구 제2터미널대로 446</div>
+                </li>
+            </ul>
+            <!--관련사이트 -->
+                <select class="site--list">
+                    <option hidden>관련사이트</option>
+                    <option>전자입찰시스템</option>
+                    <option>인터넷청구시스템</option>
+                    <option>장애물관리안내</option>
+                    <option>항공물류정보시스템</option>
+                    <option>항공보안교육원</option>
+                    <option>Aviation Academy</option>
+                    <option>운항자료서비스</option>
+                    <option>적재대관리 홈페이지</option>
+                    <option>인천공항 4단계 건설사업</option>
+                    <option>인천공항 인재개발원</option>
+                    <option>인천공항 공항산업기술연구원</option>
+                    <option>인천공항 스카이몬스</option>
+                    <option>공항경제권 홈페이지</option>
+                    <option>인천공항에너지(주)</option>
+                    <option>인천공항시설관리(주)</option>
+                    <option>인천공항운영서비스(주)</option>
+                    <option>입주자서비스포탈</option>
+                    <option>컬쳐포트-아트포트</option>
+                    <option>국토교통부 홈페이지</option>
+                    <option>인천국제공항경찰단</option>
+                    <option>외교부 안전여행</option>
+                    <option>언어가 안통할때</option>
+                    <option>도로명주소안내</option>
+                    <option>해외여행질병정보센터</option>
+                    <option>한국공항공사</option>
+                    <option>안전Dream</option>
+                    <option>관세청</option>
+                    <option>출입국외국인정책본부</option>
+                </select>
+                <li class="fum3--address">
+                <div class="fum3__address1">인천국제공항공사:22382 인천시 중구 공항로 424번길 47</div>
+                </li>
+                <!--푸터 저작권 표시?-->
+                <div class="fum3--right">
+                <i>Copyright Incheon International Airport Corporation. All rights reserved.</i>
+                </div>
+        </div>
+        
+ 
+    </div>
+</footer>
+        
+        </main>
+
+    </body>
+</html>
