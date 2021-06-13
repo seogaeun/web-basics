@@ -25,8 +25,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="jquery.fullPage.js"></script>
 
+        <link rel="stylesheet" type="text/css" href="slick.css"/>
         
-
     </head>
     <!--헤더에 아이콘 넣기-->
     <body>
@@ -46,16 +46,19 @@
                     </ul>
                 </div>
                 <!--로고 이미지 -->
-                <a href="#" class="logo">
+                <div id="headerlogo1" class="logo">
                     <img src="https://www.airport.kr/static/ap/images/logo.png" alt="로고">
-                </a>
+                </div>
+                <div id="headerlogo2" class="logo">
+                    <img src="https://www.airport.kr/static/ap/images/logo_white.png" alt="로고">
+                </div>
                 <!--로그인, 회원가입, 고객센터, 사이트맵 -->
                 <div class="sideUp__list">
                     <ul class="sub">
-                        <li>로그인</li>
-                        <li>· 회원가입</li>
-                        <li>· 고객센터</li>
-                        <li>· 사이트맵</li>
+                        <li class="sub_list">로그인</li>
+                        <li class="sub_list">· 회원가입</li>
+                        <li class="sub_list">· 고객센터</li>
+                        <li class="sub_list">· 사이트맵</li>
                     </ul>
                 </div>
                 <!--언어 -->
@@ -75,22 +78,22 @@
                 <img id="logo_sub" src="images\인천국제공항아이콘.png" alt="로고">
                 <ul class="headerdown__menu">
                     <li class="item">
-                        <div class="menu__departure">출발</div>
+                        <div id="items" class=" menu__departure">출발</div>
                     </li>
                     <li class="item">
-                        <div class="menu__arrival">도착</div>
+                        <div id="items2" class="menu__arrival">도착</div>
                     </li>
                     <li class="item">
-                        <div class="menu__exchange">환승</div>
+                        <div id="items3" class="menu__exchange">환승</div>
                     </li>
                     <li class="item">
-                        <div class="menu__traffic">교통·주차</div>
+                        <div id="items4" class="menu__traffic">교통·주차</div>
                     </li>
                     <li class="item">
-                        <div class="menu__shopping">쇼핑·식당</div>
+                        <div id="items5" class="menu__shopping">쇼핑·식당</div>
                     </li>
                     <li class="item">
-                        <div class="menu__guide">안내·서비스</div>
+                        <div id="items6" class="menu__guide">안내·서비스</div>
                     </li>
                 </ul>
 
@@ -197,7 +200,7 @@
                 <img class="quick img5" src="images\quick5.png" alt="챗봇">
                    <div>챗봇</div>
             </div>
-            <a href="#" class="top">top</a>
+            <a href="#" class="top">   top   </a>
         </div>
 
 
@@ -622,35 +625,59 @@
     <!--푸터-->
             <footer id="main--footer" class="footer section fp-auto-height">
                 <!-- 푸터 배너-->
-                <div class="mainbanner">
-                    <div class="material-icons before">
-                            navigate_before
-                       </div>
-                       <div class="banner_img_files">
-                            <img class="bannerimg1" src="images\banner1.gif" alt="배너 이미지 1번">
-                            <img class="bannerimg2" src="images\banner2.jpg" alt="배너 이미지 2번">
-                            <img class="bannerimg3" src="images\banner3.png" alt="배너 이미지 3번">
-                       </div>
-                    <div class="material-icons next">
-                        navigate_next
-                       </div>
-                    
-                    <div class="etcplay">
-                        <div class="bannerplay">
-                            <label for="search__departure">
-                                <span class="stop-to-play__icons material-icons">
-                                    play_arrow
-                                    </span>
-                            </label>
-    
-                            <label for="search__arrival">
-                                <span class="stop-to-play__icons material-icons">
-                                    pause
-                                    </span>
-                            </label>      
-                        </div>
-                    </div>
-                </div>
+                <div class="tarkikComandSlider">
+                    <article class="comandSlider__item">
+                      <img class="comandSlider__item_photo" src="images\bannerlist_1.png" alt="배너이미지1" />
+                    </article>
+
+                    <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_2.png" alt="배너이미지2" />
+                      </article>  
+
+                    <article class="comandSlider__item">
+                      <img class="comandSlider__item_photo" src="images\bannerlist_3.jpg" alt="배너이미지3" />
+                    </article>
+                  
+                    <article class="comandSlider__item">
+                      <img class="comandSlider__item_photo" src="images\bannerlist_4.gif" alt="배너이미지4" />
+                    </article>
+                  
+                    <article class="comandSlider__item">
+                      <img class="comandSlider__item_photo" src="images\bannerlist_5.png" alt="배너이미지5" />
+                    </article>
+                  
+                    <article class="comandSlider__item">
+                  
+                      <img class="comandSlider__item_photo" src="images\bannerlist_6.png" alt="배너이미지6" />
+                  
+                    </article>
+
+                    <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_7.png" alt="배너이미지7" />
+                      </article>
+
+                      <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_8.png" alt="배너이미지8" />
+                      </article>
+
+                      <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_9.jpg" alt="배너이미지9" />
+                      </article>
+
+                      <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_10.png" alt="배너이미지10" />
+                      </article>
+
+                      <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_11.jpg" alt="배너이미지11" />
+                      </article>
+
+                      <article class="comandSlider__item">
+                        <img class="comandSlider__item_photo" src="images\bannerlist_12.jpg" alt="배너이미지12" />
+                      </article>
+
+                  </div>
+
                 <!--푸터 기타 정보-->
                 <div class="footer--etc">
                                <!--푸터 첫번째 섹션(위) -->
@@ -760,6 +787,6 @@
 </footer>
         
         </main>
-
+        <script type="text/javascript" src="slick.min.js"></script>
     </body>
 </html>

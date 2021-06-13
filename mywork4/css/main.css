@@ -55,6 +55,12 @@ header .other__site {
     left:0.5%;
     text-align: center;
 }
+
+/*헤더 윗부분 글자*/
+.sub_list{
+    color: rgb(0, 0, 0);
+}
+
 /*인천국제공항 버튼*/
 .area-tab-sitebtn1{
     border: 1px solid #183af7;
@@ -1190,7 +1196,7 @@ section .etcplay{
 
     /*사이트맵~로그인 묶음*/
     .sideUp__list {
-        display:none;    
+        display:none;   
     }
     /*사이트맵~로그인 개별*/
     .sideUp__list ul li{
@@ -1241,3 +1247,64 @@ section .etcplay{
         margin: auto 0;
     }
 }
+
+/*푸터 배너*/
+*:focus, *:active, *:visited {
+    outline: none;
+  }
+  
+  .tarkikComandSlider {
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+
+
+
+  
+  .slick-prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .slick-next {
+    right: 0;
+  }
+  
+  .slick-arrow {
+    top: 60%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url(https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .comandSlider__item {
+
+    cursor: pointer;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+   
+  }
+
+
+
+  .comandSlider__item_photo {
+    padding-top: 60px;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+  
+
+
