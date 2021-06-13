@@ -205,6 +205,11 @@ if(window.scrollY<=300){
 
     //헤더 글자
     headerMenuItemEl.style.color="black"
+    headerMenuItem2El.style.color="black"
+    headerMenuItem3El.style.color="black"
+    headerMenuItem4El.style.color="black"
+    headerMenuItem5El.style.color="black"
+    headerMenuItem6El.style.color="black"
 }
 })
 
