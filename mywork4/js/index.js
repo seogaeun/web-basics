@@ -103,6 +103,9 @@ const sideMenuBTN2El = document.getElementById('area-tab-sitebtn2')
 
 //헤더 로그인~사이트맵
 const headerSideListEl=document.getElementById("sub_list")
+const headerSideListEl2=document.getElementById("sub_list2")
+const headerSideListEl3=document.getElementById("sub_list3")
+const headerSideListEl4=document.getElementById("sub_list4")
 
 //헤더 메뉴 항목들
 const headerMenuItemEl=document.getElementById("items")
@@ -138,8 +141,11 @@ if(window.scrollY<=300){
       headerMenuItem4El.style.color="white"
       headerMenuItem5El.style.color="white"
       headerMenuItem6El.style.color="white"
-      
 
+      headerSideListEl.style.color="white"
+      headerSideListEl2.style.color="white"
+      headerSideListEl3.style.color="white"
+      headerSideListEl4.style.color="white"
 
         //스크롤 위치가 1200이하이면(메인화면)
 }else if(window.scrollY<=1200){
@@ -167,6 +173,11 @@ if(window.scrollY<=300){
   headerMenuItem4El.style.color="white"
   headerMenuItem5El.style.color="white"
   headerMenuItem6El.style.color="white"
+
+  headerSideListEl.style.color="white"
+  headerSideListEl2.style.color="white"
+  headerSideListEl3.style.color="white"
+  headerSideListEl4.style.color="white"
 //로고 조정
   headerLogo1El.style.display="none"
   headerLogo2El.style.display="block"
@@ -217,6 +228,11 @@ headerMenuEl.addEventListener("mouseover", function() {
       headerMenuItem4El.style.color="black"
       headerMenuItem5El.style.color="black"
       headerMenuItem6El.style.color="black"
+
+      headerSideListEl.style.color="black"
+      headerSideListEl2.style.color="black"
+      headerSideListEl3.style.color="black"
+      headerSideListEl4.style.color="black"
     }else{
       sideMenuEl.style.transform = 'translateY(10%)'
       headerMenuEl.style.color="blue"
@@ -245,6 +261,10 @@ headerMenuEl.addEventListener("mouseover", function() {
        headerMenuItem4El.style.color="white"
        headerMenuItem5El.style.color="white"
        headerMenuItem6El.style.color="white"
+       headerSideListEl.style.color="white"
+       headerSideListEl2.style.color="white"
+       headerSideListEl3.style.color="white"
+       headerSideListEl4.style.color="white"
       }else{
           // 사이드 메뉴를 보이지 않게 합니다
           headerupMenuEl.style.backgroundColor="white"
@@ -260,6 +280,11 @@ headerMenuEl.addEventListener("mouseover", function() {
           headerMenuItem4El.style.color="black"
           headerMenuItem5El.style.color="black"
           headerMenuItem6El.style.color="black"
+
+          headerSideListEl.style.color="black"
+          headerSideListEl2.style.color="black"
+          headerSideListEl3.style.color="black"
+          headerSideListEl4.style.color="black"
 
         }
 
@@ -287,6 +312,11 @@ sideMenuEl.addEventListener("mouseover",function(){
        headerMenuItem4El.style.color="black"
        headerMenuItem5El.style.color="black"
        headerMenuItem6El.style.color="black"
+
+       headerSideListEl.style.color="black"
+       headerSideListEl2.style.color="black"
+       headerSideListEl3.style.color="black"
+       headerSideListEl4.style.color="black"
       
     }else{
       sideMenuEl.style.transform = 'translateY(10%)'
@@ -298,6 +328,11 @@ sideMenuEl.addEventListener("mouseover",function(){
       headerMenuItem4El.style.color="black"
       headerMenuItem5El.style.color="black"
       headerMenuItem6El.style.color="black"
+
+      headerSideListEl.style.color="black"
+      headerSideListEl2.style.color="black"
+      headerSideListEl3.style.color="black"
+      headerSideListEl4.style.color="black"
     }
 })
 
@@ -321,6 +356,11 @@ sideMenuEl.addEventListener("mouseout",function(){
       headerMenuItem4El.style.color="white"
       headerMenuItem5El.style.color="white"
       headerMenuItem6El.style.color="white"
+
+      headerSideListEl.style.color="white"
+      headerSideListEl2.style.color="white"
+      headerSideListEl3.style.color="white"
+      headerSideListEl4.style.color="white"
     }else{
      // 사이드 메뉴를 원상태로 숨깁니다
      sideMenuEl.style.transform = 'translateY(-150%)'
@@ -331,6 +371,11 @@ sideMenuEl.addEventListener("mouseout",function(){
           headerMenuItem4El.style.color="black"
           headerMenuItem5El.style.color="black"
           headerMenuItem6El.style.color="black"
+
+          headerSideListEl.style.color="black"
+          headerSideListEl2.style.color="black"
+          headerSideListEl3.style.color="black"
+          headerSideListEl4.style.color="black"
     }
    
 })

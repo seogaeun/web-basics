@@ -1261,7 +1261,9 @@ section .etcplay{
     position: relative;
   }
   
-
+.item{
+    color:black;
+}
 
 
   
