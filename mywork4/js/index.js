@@ -182,6 +182,10 @@ if(window.scrollY<=300){
   headerLogo1El.style.display="none"
   headerLogo2El.style.display="block"
 
+  sideMenuBTN1El.style.border="1px solid white"
+  sideMenuBTN2El.style.border="1px solid white"
+  sideMenuBTN1El.style.color="white"
+  sideMenuBTN2El.style.color="white"
   
 
 }else{
@@ -238,6 +242,11 @@ headerMenuEl.addEventListener("mouseover", function() {
       headerSideListEl2.style.color="black"
       headerSideListEl3.style.color="black"
       headerSideListEl4.style.color="black"
+
+      sideMenuBTN1El.style.border="1px solid blue"
+      sideMenuBTN2El.style.border="1px solid gray"
+      sideMenuBTN1El.style.color="black"
+      sideMenuBTN2El.style.color="black"
     }else{
       sideMenuEl.style.transform = 'translateY(10%)'
       headerMenuEl.style.color="blue"
@@ -270,6 +279,11 @@ headerMenuEl.addEventListener("mouseover", function() {
        headerSideListEl2.style.color="white"
        headerSideListEl3.style.color="white"
        headerSideListEl4.style.color="white"
+
+       sideMenuBTN1El.style.border="1px solid white"
+       sideMenuBTN2El.style.border="1px solid white"
+       sideMenuBTN1El.style.color="white"
+       sideMenuBTN2El.style.color="white"
       }else{
           // 사이드 메뉴를 보이지 않게 합니다
           headerupMenuEl.style.backgroundColor="white"
@@ -322,6 +336,11 @@ sideMenuEl.addEventListener("mouseover",function(){
        headerSideListEl2.style.color="black"
        headerSideListEl3.style.color="black"
        headerSideListEl4.style.color="black"
+
+       sideMenuBTN1El.style.border="1px solid blue"
+       sideMenuBTN2El.style.border="1px solid gray"
+       sideMenuBTN1El.style.color="black"
+       sideMenuBTN2El.style.color="black"
       
     }else{
       sideMenuEl.style.transform = 'translateY(10%)'
@@ -366,6 +385,11 @@ sideMenuEl.addEventListener("mouseout",function(){
       headerSideListEl2.style.color="white"
       headerSideListEl3.style.color="white"
       headerSideListEl4.style.color="white"
+
+      sideMenuBTN1El.style.border="1px solid white"
+      sideMenuBTN2El.style.border="1px solid white"
+      sideMenuBTN1El.style.color="white"
+      sideMenuBTN2El.style.color="white"
     }else{
      // 사이드 메뉴를 원상태로 숨깁니다
      sideMenuEl.style.transform = 'translateY(-150%)'
