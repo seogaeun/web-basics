@@ -1,0 +1,26 @@
+font-weight 100단위로 폰트 굵기
+text-decoration
+	underline->글 밑에 선
+	overline->글 위에 선
+	line-through->글 중간에 선
+가끔 가운데 정렬이 안되는 글->div로 감싸서 text-align center하기
+폰트 크기_>
+	절대적:px,pt
+	상대적:%,em->부모요소의 절대적 크기에 영향(앞에body의 크기에 비례해서 나옴)
+line-height->줄간격
+	content area에 포함x
+
+content area->font-family+font-size
+폰트->serif,sans-serif,monospace,cursive,fantasy
+font-family: 폰트 1지망,폰트2지망, 폰트3지망;
+구글-fonts.google.com
+베타출시버전-fonts.google.com/earlyaccess
+폰트파일 사용하기->font파일 생성후 원하는 폰트 파일 넣기
+	@font-face{
+		src:url("폰트파일 상대경로");
+		font-family:"폰트 이름";
+	}
+
+
+div->요소들을 묶는다,내용물을 단독적인 새로운 곳에 넣음(칸 전체 차지)
+span->원래있던 위치에 영향을 미치지 않음(칸 전체 차지x)
